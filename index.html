@@ -1,0 +1,2614 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asigurare dentară ERGO · Asigurare cu Tamas</title>
+<meta name="description" id="metaDesc" content="ERGO Dental-Tarif: până la 100 % pentru proteze dentare, implanturi și detartraj. Fără perioadă de așteptare, fără întrebări de sănătate. Calculează prețul din data nașterii.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:title" id="ogTitle" content="Asigurare dentară ERGO · Asigurare cu Tamas">
+<meta property="og:description" id="ogDesc" content="Până la 100 % pentru proteze dentare și implanturi. Fără perioadă de așteptare. Calculează prețul în 10 secunde.">
+<!-- TODO nach dem Deploy auf die echte Domain ändern -->
+<meta property="og:url" content="https://landing-zahnzusatz.pages.dev/">
+<meta property="og:image" content="https://landing-zahnzusatz.pages.dev/og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 76'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e3c68e'/%3E%3Cstop offset='.55' stop-color='%23b08d57'/%3E%3Cstop offset='1' stop-color='%23d9b877'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 2 60 11v30c0 18-13 28-28 33C17 69 4 59 4 41V11z' fill='url(%23g)' stroke='%238a6a35' stroke-width='3'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23221a0e'%3ET%3C/text%3E%3C/svg%3E">
+
+<!-- Facebook Pixel – ID eintragen und Block aktivieren
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','PIXEL-ID');fbq('track','PageView');
+</script>
+-->
+
+<style>
+:root{
+  --bg:#f7f3ec; --card:#fff; --ink:#15211e; --muted:#5b6b67; --line:#dfe6e3;
+  --brand:#8a6a35; --brand-2:#b08d57; --brand-soft:#f7f1e6; --accent:#d9b877;
+  --gold:linear-gradient(135deg,#e3c68e 0%,#b08d57 55%,#d9b877 100%);
+  --wa:#1fa855; --err:#c2352b; --radius:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px; line-height:1.5; -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+
+/* ---------- Sprachumschalter ---------- */
+.langbar{background:#15120d;padding:8px 0}
+.langbar .wrap{display:flex;gap:8px;justify-content:center}
+.lang{
+  border:1px solid #3a3228;background:#1e1a14;color:#d8cfbf;
+  border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;
+  cursor:pointer;display:flex;align-items:center;gap:6px;line-height:1;
+}
+.lang[aria-pressed="true"]{background:var(--gold);color:#221a0e;border-color:#d9b877}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:radial-gradient(120% 80% at 50% 0%,#24201a,#111);
+  color:#fff;padding:26px 0 86px;text-align:center;
+}
+.brand{width:230px;max-width:70%;margin:0 auto 18px}
+.pill{
+  display:inline-block;background:rgba(217,184,119,.14);border:1px solid rgba(217,184,119,.45);
+  color:var(--accent);border-radius:999px;padding:5px 14px;font-size:12.5px;
+  font-weight:700;letter-spacing:.3px;text-transform:uppercase;
+}
+.hero h1{font-size:28px;line-height:1.2;margin:14px 0 8px;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lead{color:#cfc8bc;margin:0 auto;max-width:460px}
+.ticks{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:8px;text-align:left}
+.ticks li{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:10px 12px 10px 38px;position:relative;font-size:14.5px;
+}
+.ticks li::before{
+  content:"✓";position:absolute;left:12px;top:9px;color:#221a0e;background:var(--gold);
+  width:18px;height:18px;border-radius:50%;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.trust{display:flex;align-items:center;gap:12px;justify-content:flex-start;margin-top:20px;text-align:left}
+.trust .ph{
+  width:52px;height:52px;border-radius:50%;flex:0 0 52px;
+  background:var(--gold);color:#221a0e;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:19px;border:2px solid var(--accent);overflow:hidden;
+}
+.trust b{display:block;color:#fff;font-size:15px;font-weight:800;line-height:1.25}
+.trust small{display:block;color:var(--accent);font-size:12.5px;line-height:1.4;margin-top:2px}
+/* Portraitfoto: füllt jeden runden Platzhalter */
+.ph img,.ch-av img,.about-top .ph img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+
+/* ---------- Rechner / Pakete ---------- */
+.plans{margin-top:-62px;position:relative;z-index:2}
+.sec-h{text-align:center;margin:0 0 4px;font-size:20px;font-weight:800}
+.sec-s{text-align:center;color:var(--muted);font-size:14px;margin:0 0 14px}
+.calc{background:var(--brand-soft);border:1px solid #ece0c9;border-radius:14px;padding:14px;margin-bottom:14px}
+.calc label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.calc input[type=date]{
+  width:100%;padding:13px 12px;border:1px solid var(--line);border-radius:10px;
+  font-size:17px;font-family:inherit;background:#fff;color:var(--ink);font-weight:700;
+  min-height:50px;
+}
+.calc .state{margin:10px 0 0;font-size:13.5px;font-weight:700;color:var(--brand);text-align:center}
+.calc .state.is-example{color:var(--muted);font-weight:600}
+.person{margin-bottom:8px}
+.person.fam{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 10px 10px}
+.prow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.prole{
+  font-size:13px;font-weight:800;color:var(--brand);background:var(--brand-soft);
+  border:1px solid #ece0c9;border-radius:999px;padding:6px 28px 6px 12px;min-height:0;
+  width:auto;max-width:78%;font-family:inherit;cursor:pointer;
+  -webkit-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0h10L5 6z' fill='%238a6a35'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 11px center;
+}
+.prole.fixed{cursor:default;background-image:none;padding-right:12px}
+button.prole{padding-right:28px}
+.person.pick{border-color:var(--brand-2);background:var(--brand-soft)}
+.pq{font-size:13px;font-weight:800;color:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{
+  border:1px solid var(--brand-2);background:#fff;color:var(--brand);border-radius:999px;
+  padding:9px 14px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit;
+}
+.chip:hover{background:var(--gold);color:#221a0e;border-color:#d9b877}
+.info{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:10px}
+.info summary{font-size:14px;font-weight:800;color:var(--brand);list-style:none;cursor:pointer}
+.info summary::-webkit-details-marker{display:none}
+.info summary::after{content:"+";float:right;color:var(--brand-2);font-weight:800}
+.info[open] summary::after{content:"–"}
+.info h4{margin:15px 0 4px;font-size:14px}
+.info p{font-size:13.5px;color:var(--muted);margin:0}
+.info table{width:100%;border-collapse:collapse;margin:12px 0 0;font-size:13px}
+.info th,.info td{padding:6px 3px;border-bottom:1px solid var(--line);text-align:right}
+.info th:first-child,.info td:first-child{text-align:left}
+.info thead th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.2px}
+.info tbody tr:last-child td{border-bottom:0}
+.info .unl{margin-top:8px;font-weight:700;color:var(--brand);font-size:13px;text-align:center}
+.info .ex{background:var(--brand-soft);border-radius:10px;padding:10px 12px;margin-top:10px;font-size:13.5px;color:#5b4a2c;line-height:1.5}
+.info .ex b{color:var(--ink);display:block;margin-bottom:2px}
+.cta2{display:grid;gap:8px;margin-top:14px}
+.plan-info{margin-top:10px;background:#fbf9f5;border-color:#ece4d6}
+.plan-info:not([open]){display:none}
+.plan-info > summary{display:none}
+.plan-info h4:first-child{margin-top:4px}
+.exrow{display:flex;justify-content:space-between;gap:10px;padding:3px 0;align-items:baseline}
+.exrow span{color:#6b5f49}
+.exrow b{white-space:nowrap;color:var(--ink)}
+.exrow.tot{border-top:1px solid #e3d6bd;margin-top:5px;padding-top:6px;font-weight:700}
+.exrow.tot b{color:var(--brand);font-size:15px}
+.exnote{font-size:12px;color:#7a6c53;margin-top:7px;line-height:1.45}
+/* Frag-Kasten am Ende eines Infokastens – eigene Karte mit goldener Kopfzeile */
+.askbox{margin-top:16px}
+.askcard{border:1px solid var(--brand-2);border-radius:14px;overflow:hidden;background:#fff}
+.askcard__h{background:var(--gold);color:#221a0e;padding:9px 12px;display:flex;align-items:center;gap:8px}
+.askcard__h .bub{font-size:15px;line-height:1;flex:0 0 auto}
+.askcard__h b{font-size:13.5px;font-weight:800;line-height:1.3}
+.askcard__h .live{
+  margin-left:auto;display:flex;align-items:center;gap:6px;
+  font-size:11.5px;font-weight:700;white-space:nowrap;
+}
+.askcard__h .live::before{
+  content:"";width:7px;height:7px;border-radius:50%;background:#0f7a39;flex:0 0 7px;
+  animation:askpulse 2.2s infinite;
+}
+@keyframes askpulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(15,122,57,.5)}
+  70%{box-shadow:0 0 0 7px rgba(15,122,57,0)}
+}
+@media(prefers-reduced-motion:reduce){.askcard__h .live::before{animation:none}}
+.askcard__b{padding:12px}
+.askpv{display:flex;gap:8px;align-items:flex-end;margin-bottom:10px}
+.askpv .ph{
+  width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--gold);color:#221a0e;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;overflow:hidden;
+}
+.askpv .bubble{
+  background:#fff;border:1px solid var(--line);border-radius:14px;border-bottom-left-radius:4px;
+  padding:9px 11px;font-size:13.5px;line-height:1.5;color:var(--ink);
+}
+.askrow{
+  display:flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--brand-2);
+  border-radius:999px;padding:4px 4px 4px 14px;
+}
+.askrow input.askin{
+  flex:1;min-width:0;width:auto;border:0;background:none;font-size:15px;font-family:inherit;
+  color:var(--ink);padding:9px 2px;min-height:0;border-radius:0;
+}
+.askrow input.askin:focus{outline:none;border:0}
+.asksend{
+  flex:0 0 38px;width:38px;height:38px;border-radius:50%;border:0;background:var(--gold);
+  color:#221a0e;font-size:17px;line-height:1;cursor:pointer;font-family:inherit;
+}
+.askwl{
+  display:block;margin:11px 0 0;font-size:12.5px;color:#17813f;
+  text-decoration:underline;font-weight:700;text-align:center;line-height:1.5;
+}
+.askwl svg{width:15px;height:15px;vertical-align:-3px;margin-right:5px}
+.zekbox .askwl{color:#7fd6a0}
+.person input[type=date]{width:100%}
+.delp{
+  flex:0 0 32px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
+  background:#fff;color:var(--muted);font-size:17px;line-height:1;cursor:pointer;padding:0;
+}
+.delp:hover{border-color:var(--err);color:var(--err)}
+.addp{
+  width:100%;border:1px dashed var(--brand-2);background:rgba(255,255,255,.6);
+  color:var(--brand);border-radius:10px;padding:10px;font-size:14px;font-weight:700;
+  cursor:pointer;font-family:inherit;margin-top:2px;
+}
+.addp:disabled{opacity:.45;cursor:default}
+.breakdown{
+  margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--line);
+  font-size:12.5px;color:var(--muted);line-height:1.6;
+}
+.breakdown span{white-space:nowrap}
+.sofort .breakdown{border-top-color:rgba(255,255,255,.14);color:#9b948a;margin:0 0 12px}
+.sofort .breakdown b{color:#eae4d9}
+.breakdown b{color:var(--ink);font-weight:700}
+.toggle{
+  display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:4px;gap:4px;margin:0 auto 14px;max-width:320px;
+}
+.toggle button{
+  flex:1;border:0;background:transparent;border-radius:999px;padding:9px 6px;
+  font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;
+}
+.toggle button[aria-pressed="true"]{background:var(--gold);color:#221a0e}
+.plan{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;margin-bottom:12px;position:relative;
+}
+.plan.best{border-color:var(--brand-2);box-shadow:0 8px 24px rgba(138,106,53,.16)}
+.ribbon{
+  position:absolute;top:-11px;left:16px;background:var(--gold);color:#221a0e;
+  border-radius:999px;font-size:11.5px;font-weight:800;padding:4px 10px;
+  text-transform:uppercase;letter-spacing:.3px;
+}
+.plan-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.plan-name{font-size:17px;font-weight:800;margin:0}
+.plan-tarif{color:var(--muted);font-size:12.5px;margin:2px 0 0}
+.price{text-align:right;flex:0 0 auto}
+.price .was{display:block;font-size:13px;color:var(--muted);text-decoration:line-through;line-height:1.2}
+.price b{font-size:27px;display:block;line-height:1.05;white-space:nowrap;color:var(--brand)}
+.price span{color:var(--muted);font-size:11.5px;display:block}
+.dealbox{margin:12px 0 0;border:1px solid var(--brand-2);border-radius:11px;overflow:hidden}
+.deal{
+  background:var(--gold);color:#221a0e;padding:9px 11px;
+  font-size:13px;font-weight:800;text-align:center;line-height:1.4;
+}
+.after{
+  background:#fff;padding:9px 11px;text-align:center;
+  font-size:13.5px;color:var(--muted);line-height:1.4;
+}
+.after b{color:var(--ink);font-size:16px;font-weight:800;white-space:nowrap}
+.banner{
+  background:#15211e;color:var(--accent);border:1px solid #3a3228;border-radius:12px;
+  padding:11px 13px;font-size:13px;font-weight:700;text-align:center;margin:0 0 14px;line-height:1.45;
+}
+.plan ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px}
+.plan li{padding-left:22px;position:relative;font-size:14.5px}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--brand-2);font-weight:800}
+.plan .btn{margin-top:14px}
+.btn{
+  display:block;width:100%;border:0;cursor:pointer;text-align:center;text-decoration:none;
+  background:var(--gold);color:#221a0e;font-weight:800;font-size:16px;
+  padding:14px 16px;border-radius:12px;box-shadow:0 4px 0 #8f6d36;
+}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #8f6d36}
+.btn--wa{background:var(--wa);color:#fff;box-shadow:0 4px 0 #15763c}
+.btn--ghost{background:#fff;border:1px solid var(--brand-2);color:var(--brand);box-shadow:0 4px 0 #e6ded1}
+.btn--ghost:active{box-shadow:0 2px 0 #e6ded1}
+.fine{color:var(--muted);font-size:12px;margin:2px 0 0;text-align:center;line-height:1.45}
+
+/* ---------- Sofortschutz ---------- */
+.sofort{background:#15211e;color:#fff;border-radius:var(--radius);padding:18px;margin-top:18px}
+.sofort .tagline{
+  display:inline-block;background:var(--gold);color:#221a0e;border-radius:999px;
+  font-size:11.5px;font-weight:800;padding:3px 10px;text-transform:uppercase;letter-spacing:.3px;
+}
+.sofort h2{font-size:21px;margin:10px 0 6px;font-weight:800;color:var(--accent);letter-spacing:.2px;white-space:nowrap}
+.sof-sub{color:#9b948a!important;font-size:12.5px!important;margin:3px 0 0!important}
+.sof-q{color:#fff!important;font-size:15.5px!important;font-weight:800;margin:4px 0 6px!important;line-height:1.35}
+.sofort p{color:#cfc8bc;font-size:14.5px;margin:0 0 12px}
+.sofort ul{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:7px}
+.sofort li{padding-left:22px;position:relative;font-size:14.5px;color:#eae4d9}
+.sofort li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+.sofort small{display:block;color:#9b948a;font-size:12px;margin-top:10px;line-height:1.45}
+.sof-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin:10px 0 6px}
+.sof-top > div:first-child{flex:1 1 auto;min-width:0}
+.sof-top h2{margin:0}
+.sof-price{text-align:right;flex:0 0 auto}
+.sof-price b{display:block;font-size:23px;line-height:1.1;color:var(--accent);white-space:nowrap}
+.sof-price span{font-size:11.5px;color:#9b948a;display:block}
+.sof-det{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);margin:0 0 14px;padding:11px 13px}
+.zek-info{margin:12px 0 0}
+.zek-info:not([open]){display:none}
+.zek-info > summary{display:none}
+.zek-info__h{margin:2px 0 10px;font-size:14.5px;font-weight:800;color:#fff}
+.sof-det summary{color:#eae4d9;font-size:14px}
+.sof-det summary::after{color:var(--accent)}
+.sof-det ul.cond{margin:12px 0 0;display:grid;gap:8px}
+.sof-det ul.cond li{padding-left:16px;font-size:13.5px;color:#cfc8bc;line-height:1.5}
+.sof-det ul.cond li::before{content:"•";color:var(--accent)}
+.sof-det ul.cond li.no::before{content:"✕";color:#e08a82;font-size:12px}
+.sof-det ul.cond li b{color:#fff}
+
+/* ---------- Card / Funnel ---------- */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:0 10px 30px rgba(21,33,30,.07);
+}
+.card--below{margin:18px 0 0}
+.card h2{font-size:19px;margin:0 0 4px;font-weight:800}
+.card .sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+.opt{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;
+  background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;
+  font-size:15px;color:var(--ink);text-decoration:none;
+}
+.opt:hover{border-color:var(--brand-2)}
+.opt .ic{
+  flex:0 0 34px;width:34px;height:34px;border-radius:10px;background:var(--brand-soft);
+  display:flex;align-items:center;justify-content:center;font-size:17px;
+}
+.opt--wa{background:#f1fbf5;border-color:#bfe8cf}
+.opt--wa .ic{background:var(--wa);color:#fff}
+.opt b{display:block;font-size:15px}
+.opt small{color:var(--muted);font-size:12.5px}
+form{margin-top:4px}
+.row{margin-bottom:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}
+textarea{
+  width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;
+  font-size:16px;font-family:inherit;background:#fff;color:var(--ink);resize:vertical;
+}
+textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--brand-2)}
+input[type=text],input[type=tel],input[type=email],input[type=date],select{
+  width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;
+  font-size:16px;font-family:inherit;background:#fff;color:var(--ink);min-height:48px;
+}
+input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--brand-2)}
+.hint{color:var(--muted);font-size:12px;margin-top:4px}
+.quote{
+  background:var(--brand-soft);border:1px solid #ece0c9;border-radius:10px;
+  padding:10px 12px;font-size:13.5px;margin-bottom:12px;display:none;
+}
+.quote.on{display:block}
+.quote b{color:var(--brand);font-size:16px}
+.note{
+  display:none;background:#eef7f1;border:1px solid #bfe8cf;border-radius:10px;
+  padding:10px 12px;font-size:13px;color:#1d5c38;margin-top:8px;
+}
+.note.on{display:block}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--muted);font-weight:400}
+.check input{margin-top:2px;flex:0 0 18px;width:18px;height:18px;min-height:0;accent-color:var(--brand-2)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.err{color:var(--err);font-size:13px;margin-top:8px;display:none}
+.err.on{display:block}
+.back{background:none;border:0;color:var(--muted);font-size:13px;text-decoration:underline;cursor:pointer;padding:8px 0 0}
+.success{display:none;text-align:center;padding:10px 0}
+.success.on{display:block}
+.success .big{font-size:40px;line-height:1}
+.success h3{margin:8px 0 4px;font-size:19px}
+.success p{color:var(--muted);margin:0 0 14px}
+
+/* ---------- Antragsstrecke ---------- */
+.reassure{font-size:12.5px;color:var(--muted);text-align:center;margin:10px 0 0;line-height:1.5}
+.walink{
+  display:block;width:100%;text-align:center;margin:14px 0 0;font-size:14px;
+  color:var(--muted);text-decoration:underline;background:none;border:0;padding:0;
+  font-family:inherit;cursor:pointer;
+}
+.walink:hover{color:var(--brand)}
+a.walink:hover{color:var(--wa)}
+.prog{display:flex;align-items:center;gap:10px;margin:0 0 16px}
+.pbar{flex:1;height:6px;border-radius:99px;background:var(--line);overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--gold);border-radius:99px;transition:width .25s}
+.prog span{font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
+.wstep h2{font-size:18px;margin:0 0 14px}
+.subh{font-size:15px;font-weight:800;margin:18px 0 8px}
+.pills{display:flex;gap:8px}
+.pills--wrap{flex-wrap:wrap}
+.pills button{
+  flex:1;min-width:0;border:1px solid var(--line);background:#fff;border-radius:10px;
+  padding:12px 10px;font-size:14.5px;font-weight:700;color:var(--ink);cursor:pointer;
+  font-family:inherit;min-height:48px;
+}
+.pills--wrap button{flex:0 1 auto}
+.pills button[aria-pressed="true"]{background:var(--gold);border-color:#d9b877;color:#221a0e}
+.warn{
+  display:none;background:#fdf1f0;border:1px solid #f0c8c4;border-radius:10px;
+  padding:11px 13px;font-size:13.5px;color:#8c2f27;margin-top:9px;line-height:1.5;
+}
+.warn.on{display:block}
+.warn .btn{margin-top:10px}
+.secure{font-size:12.5px;color:var(--muted);text-align:center;margin:4px 0 0}
+.zekhint{
+  font-size:12.5px;color:var(--muted);line-height:1.55;margin:16px 0 0;
+  padding-top:13px;border-top:1px solid var(--line);
+}
+.zekhint .zeklink{margin-top:3px;color:var(--brand)}
+.zeklink{
+  display:inline-block;margin-top:8px;background:none;border:0;padding:0;cursor:pointer;
+  font-family:inherit;font-size:13px;font-weight:800;color:#1d5c38;text-decoration:underline;
+}
+.zekbox{display:none;background:#15211e;color:#fff;border-radius:12px;padding:15px;margin:10px 0 14px}
+.zekbox.on{display:block}
+.zekbox .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}
+.zekbox h4{margin:0;font-size:17px;font-weight:800;color:var(--accent)}
+.zekbox h4 span{
+  display:block;color:#9b948a;font-size:11px;font-weight:700;margin-top:3px;
+  text-transform:uppercase;letter-spacing:.3px;
+}
+.zekbox .pr{text-align:right;flex:0 0 auto}
+.zekbox .pr b{display:block;font-size:19px;color:var(--accent);line-height:1.1;white-space:nowrap}
+.zekbox .pr span{font-size:11px;color:#9b948a}
+.zekbox ul{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:6px}
+.zekbox li{padding-left:20px;position:relative;font-size:13.5px;color:#eae4d9;line-height:1.45}
+.zekbox li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+.zekbox small{display:block;color:#9b948a;font-size:11.5px;margin-top:9px;line-height:1.45}
+.zekbox .chosen{
+  background:rgba(217,184,119,.15);border:1px solid rgba(217,184,119,.45);color:var(--accent);
+  border-radius:10px;padding:9px 11px;font-size:13px;font-weight:700;text-align:center;
+}
+.summary{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:14px}
+.srow{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;font-size:13.5px;border-bottom:1px solid var(--line)}
+.srow:last-child{border-bottom:0}
+.srow span{color:var(--muted);flex:0 0 42%}
+.srow b{text-align:right;font-weight:700;word-break:break-word}
+.srow .edit{flex:0 0 auto;color:var(--brand);text-decoration:underline;cursor:pointer;font-size:12px;background:none;border:0;padding:0;font-family:inherit}
+.pricebox{background:var(--brand-soft);border:1px solid #ece0c9;border-radius:12px;padding:13px;margin-bottom:6px}
+.pricebox .l{display:flex;justify-content:space-between;font-size:13.5px;padding:3px 0}
+.pricebox .l b{font-size:17px;color:var(--brand)}
+.docs{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:7px}
+.docs a{
+  display:block;border:1px solid var(--line);border-radius:10px;padding:11px 12px;
+  font-size:14px;color:var(--ink);text-decoration:none;background:#fff;
+}
+.docs a::after{content:"↗";float:right;color:var(--brand-2)}
+.docs a:hover{border-color:var(--brand-2)}
+.pbarfix{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+  background:#15211e;color:#fff;padding:10px 16px;
+}
+.pbarfix.on{display:block}
+.pbarfix .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0}
+.pbarfix #pbLeft{font-size:12.5px;color:#bdb6aa;line-height:1.35}
+.pbarfix #pbRight{font-size:17px;font-weight:800;color:var(--accent);white-space:nowrap;text-align:right;line-height:1.25}
+.pbarfix #pbRight small{display:block;font-size:11px;font-weight:600;color:#bdb6aa}
+
+/* ---------- Infosektionen ---------- */
+section{margin-top:26px}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:12px}
+.steps li{counter-increment:s;padding-left:46px;position:relative}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;
+  background:#15211e;color:var(--accent);display:flex;align-items:center;justify-content:center;
+  font-weight:800;border:2px solid var(--accent);
+}
+.steps b{display:block}
+.steps small{color:var(--muted)}
+.deadline{
+  background:#fff8e4;border:1px solid #f0dca6;border-radius:var(--radius);
+  padding:14px;display:flex;gap:12px;align-items:flex-start;
+}
+.deadline .ic{font-size:22px;line-height:1}
+.deadline b{display:block;margin-bottom:2px}
+.deadline p{margin:0;font-size:14px;color:#5b5033}
+.about{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.about-top{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.about-top .ph{
+  width:56px;height:56px;flex:0 0 56px;border-radius:50%;background:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#221a0e;
+}
+.about-top b{display:block;font-size:17px}
+.about-top small{color:var(--muted)}
+.about p{font-size:14.5px;color:var(--muted);margin:0 0 12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.stats div{background:var(--brand-soft);border-radius:12px;padding:10px 6px}
+.stats b{display:block;font-size:17px;color:var(--brand)}
+.stats small{font-size:11.5px;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px}
+details summary{font-weight:700;cursor:pointer;font-size:15px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:right;color:var(--brand-2);font-weight:800}
+details[open] summary::after{content:"–"}
+details p{font-size:14.5px;color:var(--muted);margin:10px 0 0}
+footer{margin:30px 0 0;background:#15120d;color:#9b948a;padding:22px 0 28px}
+footer .wrap{text-align:center;font-size:13px}
+footer a{color:#cfc8bc}
+footer .links{margin-bottom:10px}
+footer .links a{margin:0 6px}
+footer .cross{margin-top:12px;font-size:12.5px;color:#7e786f}
+.disc{font-size:11.5px;color:#6f6a62;margin-top:12px;line-height:1.45}
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(247,243,236,.95);
+  border-top:1px solid var(--line);padding:10px 16px;backdrop-filter:blur(6px);display:none;
+}
+.sticky.on{display:block}
+.sticky .wrap{padding:0}
+.spacer{height:72px}
+
+/* ---------- Mini-Chat ---------- */
+.chatbtn{
+  position:fixed;right:16px;bottom:84px;z-index:70;width:56px;height:56px;border-radius:50%;
+  border:0;cursor:pointer;background:var(--wa);color:#fff;font-size:26px;line-height:1;
+  box-shadow:0 6px 18px rgba(21,33,30,.28);
+}
+.chatbtn.hide{display:none}
+.chatbtn .dot{
+  position:absolute;top:2px;right:2px;width:14px;height:14px;border-radius:50%;
+  background:var(--err);border:2px solid #fff;
+}
+.chatwin{
+  position:fixed;right:16px;left:16px;bottom:84px;z-index:80;display:none;
+  max-width:380px;margin-left:auto;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 14px 40px rgba(21,33,30,.25);overflow:hidden;
+}
+.chatwin.on{display:flex;flex-direction:column}
+.chathead{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#15211e;color:#fff}
+.ch-av{
+  width:38px;height:38px;flex:0 0 38px;border-radius:50%;background:var(--gold);color:#221a0e;
+  display:flex;align-items:center;justify-content:center;font-weight:800;overflow:hidden;
+}
+.chathead b{display:block;font-size:14.5px;line-height:1.2}
+.chathead small{color:#bdb6aa;font-size:11.5px}
+.ch-x{
+  margin-left:auto;background:none;border:0;color:#bdb6aa;font-size:24px;line-height:1;
+  cursor:pointer;padding:0 2px;
+}
+.chatbody{
+  padding:14px;display:flex;flex-direction:column;gap:9px;overflow-y:auto;
+  max-height:46vh;background:var(--bg);
+}
+.msg{max-width:88%;padding:10px 12px;border-radius:14px;font-size:14px;line-height:1.5}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.me{background:var(--gold);color:#221a0e;border-bottom-right-radius:4px;align-self:flex-end;font-weight:600}
+.chatchips{padding:11px 12px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:7px;background:#fff}
+.chatchips button{
+  border:1px solid var(--brand-2);background:#fff;color:var(--brand);border-radius:999px;
+  padding:8px 13px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;text-align:left;
+}
+.chatchips button:hover{background:var(--brand-soft)}
+.chatchips a.cwa{
+  flex:1 1 100%;text-align:center;background:var(--wa);color:#fff;border-radius:10px;
+  padding:11px;font-size:14px;font-weight:800;text-decoration:none;
+}
+.chatin{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--line);background:#fff}
+.chatin input{
+  flex:1;min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:999px;
+  font-size:16px;font-family:inherit;min-height:44px;
+}
+.chatin button{
+  flex:0 0 44px;width:44px;height:44px;border-radius:50%;border:0;background:var(--gold);
+  color:#221a0e;font-size:19px;cursor:pointer;line-height:1;
+}
+.chatin button:disabled{opacity:.45;cursor:default}
+.chatfoot{padding:0 12px 10px;font-size:11px;color:var(--muted);text-align:center;background:#fff;line-height:1.4}
+.typing{display:flex;gap:4px;align-items:center}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--brand-2);animation:bl 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.2s}
+.typing i:nth-child(3){animation-delay:.4s}
+@keyframes bl{0%,60%,100%{opacity:.25}30%{opacity:1}}
+@media(max-height:640px){.chatbody{max-height:32vh}}
+@media(min-width:420px){.hero h1{font-size:31px}}
+</style>
+</head>
+<body>
+
+<div class="langbar">
+  <div class="wrap">
+    <button class="lang" data-lang="ro" aria-pressed="true"><span>🇷🇴</span>Română</button>
+    <button class="lang" data-lang="hu" aria-pressed="false"><span>🇭🇺</span>Magyar</button>
+    <button class="lang" data-lang="de" aria-pressed="false"><span>🇩🇪</span>Deutsch</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <!-- LOGO: 1:1 aus landing-kfz-wechsel-ro ersetzen (Design-System) -->
+    <div class="brand" id="brand">
+      <svg viewBox="0 0 230 92" role="img" aria-label="Asigurare cu Tamas">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e3c68e"/><stop offset=".55" stop-color="#b08d57"/><stop offset="1" stop-color="#d9b877"/>
+          </linearGradient>
+        </defs>
+        <path d="M35 4 62 12v26c0 16-12 25-27 30C20 63 8 54 8 38V12z" fill="url(#lg)" stroke="#8a6a35" stroke-width="2.5"/>
+        <text x="35" y="47" font-family="Georgia,serif" font-size="30" font-weight="700" text-anchor="middle" fill="#221a0e">T</text>
+        <text id="brand1" x="76" y="34" font-family="Georgia,serif" font-size="19" font-weight="700" fill="#f1e6d2">Asigurare cu</text>
+        <text id="brand2" x="76" y="56" font-family="Georgia,serif" font-size="23" font-weight="700" fill="#d9b877">Tamas</text>
+        <text id="claim" x="8" y="80" font-family="system-ui,sans-serif" font-size="10" fill="#b9b1a4">Alege calitatea, alege echipa lui Tamas</text>
+      </svg>
+    </div>
+
+    <span class="pill">ERGO Dental-Tarif</span>
+    <h1 data-t="h1"></h1>
+    <p class="lead" data-t="lead"></p>
+    <ul class="ticks">
+      <li data-t="tick1"></li>
+      <li data-t="tick2"></li>
+      <li data-t="tick3"></li>
+    </ul>
+    <div class="trust">
+      <div class="ph" data-photo>T</div>
+      <div><b data-t="trustName"></b><small data-t="trust"></small></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- RECHNER + PAKETE -->
+  <section class="plans wrap" id="plans">
+    <div class="card" style="padding:16px 14px">
+      <h2 class="sec-h" data-t="plansH"></h2>
+      <p class="sec-s" data-t="plansS"></p>
+
+      <div class="toggle" id="tarifToggle">
+        <button data-tarif="Individual" aria-pressed="true" data-t="tarifInd"></button>
+        <button data-tarif="Familie" aria-pressed="false" data-t="tarifFam"></button>
+      </div>
+
+      <div class="calc">
+        <label data-t="bdL"></label>
+        <div id="people"></div>
+        <button type="button" class="addp" id="addPerson" style="display:none"></button>
+        <p class="state is-example" id="calcState"></p>
+      </div>
+
+      <p class="banner" data-t="bannerDeal"></p>
+      <div id="planList"></div>
+      <p class="fine" data-t="priceNote" style="margin-top:12px"></p>
+    </div>
+
+    <!-- SOFORTSCHUTZ – Tarif ZEK -->
+    <div class="sofort">
+      <span class="tagline" data-t="sofTag"></span>
+      <div class="sof-top">
+        <div><h2 id="sofName"></h2><p class="sof-sub" data-t="sofSub"></p></div>
+        <div class="sof-price" id="sofPrice"></div>
+      </div>
+      <p class="sof-q" data-t="sofH"></p>
+      <p data-t="sofS"></p>
+      <div id="sofBreak"></div>
+      <ul>
+        <li data-t="sof1"></li>
+        <li data-t="sof2"></li>
+        <li data-t="sof3"></li>
+        <li data-t="sof4"></li>
+      </ul>
+      <div class="cta2">
+        <button class="btn" id="sofBtn" data-t="sofCta"></button>
+        <button class="btn btn--ghost" id="sofMore" data-t="planMore"></button>
+      </div>
+      <details class="sof-det zek-info" id="sofInfo">
+        <summary></summary>
+        <h4 class="zek-info__h" data-t="sofCondT"></h4>
+        <ul class="cond" id="sofCond"></ul>
+        <div id="zekAsk"></div>
+      </details>
+      <small data-t="sofNote"></small>
+    </div>
+  </section>
+
+  <!-- SO LÄUFT ES AB -->
+  <section class="wrap">
+    <h2 class="sec-h" data-t="stepsH"></h2>
+    <p class="sec-s" data-t="stepsS"></p>
+    <ol class="steps">
+      <li><b data-t="st1T"></b><small data-t="st1S"></small></li>
+      <li><b data-t="st2T"></b><small data-t="st2S"></small></li>
+      <li><b data-t="st3T"></b><small data-t="st3S"></small></li>
+      <li><b data-t="st4T"></b><small data-t="st4S"></small></li>
+    </ol>
+  </section>
+
+  <!-- ANTRAG -->
+  <section class="wrap">
+    <div class="card card--below" id="card">
+
+      <div id="intro">
+        <h2 data-t="ctaH"></h2>
+        <p class="sub" data-t="ctaS"></p>
+        <button class="btn" id="startBtn" data-t="ctaBtn"></button>
+        <p class="reassure" data-t="ctaNote"></p>
+        <button type="button" class="walink" id="cbBtn" data-t="ctaCb"></button>
+        <a class="walink" id="waBtn" href="#" target="_blank" rel="noopener" data-t="ctaWa"></a>
+      </div>
+
+      <form id="cbForm" style="display:none" novalidate>
+        <h2 data-t="cbH"></h2>
+        <p class="sub" data-t="cbS"></p>
+        <div class="row"><label data-t="fName"></label>
+          <input type="text" name="name" autocomplete="name"></div>
+        <div class="row"><label data-t="fPhone"></label>
+          <input type="tel" name="phone" autocomplete="tel" inputmode="tel"></div>
+        <div class="row"><label data-t="fTime"></label>
+          <select name="time">
+            <option value="Oricând" data-t="fTime1"></option>
+            <option value="Dimineața" data-t="fTime2"></option>
+            <option value="După-amiaza" data-t="fTime3"></option>
+            <option value="Seara" data-t="fTime4"></option>
+          </select></div>
+        <div class="row"><label data-t="cbMsg"></label>
+          <textarea name="message" rows="3"></textarea></div>
+        <div class="hp"><label>Website</label><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="row"><label class="check">
+          <input type="checkbox" name="consent" value="ja"><span data-t="fConsent"></span></label></div>
+        <input type="hidden" name="product" value="Zahnzusatz">
+        <input type="hidden" name="type" value="callback">
+        <input type="hidden" name="lang" id="cbLang" value="ro">
+        <input type="hidden" name="plan" id="cbPlan" value="">
+        <input type="hidden" name="beitrag" id="cbBeitrag" value="">
+        <input type="hidden" name="age" id="cbAge" value="">
+        <button class="btn" type="button" id="cbSend" data-t="cbSend"></button>
+        <div class="err" id="cbErr"></div>
+        <button class="back" type="button" id="cbBack" data-t="fBack"></button>
+      </form>
+
+      <form id="form" style="display:none" novalidate>
+        <div class="prog"><div class="pbar"><i id="progFill"></i></div><span id="progTxt"></span></div>
+
+        <div class="wstep" data-step="1">
+          <h2 data-t="w1H"></h2>
+          <div class="row"><label data-t="fAnrede"></label>
+            <div class="pills" data-pick="anrede">
+              <button type="button" data-val="Herr" data-t="anrHerr"></button>
+              <button type="button" data-val="Frau" data-t="anrFrau"></button>
+            </div><input type="hidden" name="anrede" value="Herr"></div>
+          <div class="row row2">
+            <div><label data-t="fVorname"></label><input type="text" name="vorname" autocomplete="given-name"></div>
+            <div><label data-t="fNachname"></label><input type="text" name="nachname" autocomplete="family-name"></div>
+          </div>
+          <div class="row"><label data-t="fBd"></label>
+            <input type="date" name="birthdate" id="bd2" min="1920-01-01"></div>
+          <div id="famNames"></div>
+          <div class="row"><label data-t="fBeginn"></label>
+            <input type="date" name="beginn_wunsch" id="beginnIn">
+            <div class="hint" data-t="fBeginnH"></div></div>
+        </div>
+
+        <div class="wstep" data-step="2" style="display:none">
+          <h2 data-t="w2H"></h2>
+          <div class="row"><label data-t="fPhone"></label>
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel"></div>
+          <div class="row"><label data-t="fKanal"></label>
+            <div class="pills pills--wrap" data-pick="kanal">
+              <button type="button" data-val="WhatsApp" data-t="kanWa"></button>
+              <button type="button" data-val="E-Mail" data-t="kanMail"></button>
+              <button type="button" data-val="Beides" data-t="kanBoth"></button>
+            </div><input type="hidden" name="kanal" value="">
+            <div class="note" id="waNote" data-t="waNote"></div></div>
+          <div class="row"><label id="mailLab"></label>
+            <input type="email" name="email" autocomplete="email" inputmode="email">
+            <div class="hint" id="mailHint"></div></div>
+          <div class="row row2">
+            <div><label data-t="fPlz"></label>
+              <input type="text" name="plz" inputmode="numeric" autocomplete="postal-code" maxlength="5"></div>
+            <div><label data-t="fOrt"></label>
+              <input type="text" name="ort" autocomplete="address-level2"></div>
+          </div>
+          <div class="row"><label data-t="fStreet"></label>
+            <input type="text" name="strasse" autocomplete="street-address"></div>
+        </div>
+
+        <div class="wstep" data-step="3" style="display:none">
+          <h2 id="w3Head" data-t="w3H"></h2>
+          <div class="row"><label data-t="fGkv"></label>
+            <div class="pills" data-pick="gkv">
+              <button type="button" data-val="ja" data-t="yes"></button>
+              <button type="button" data-val="nein" data-t="no"></button>
+            </div><input type="hidden" name="gkv" value="">
+            <div class="warn" id="gkvWarn"><span data-t="gkvWarn"></span>
+              <a class="btn btn--wa" id="gkvWa" href="#" target="_blank" rel="noopener" data-t="ctaWa"></a></div>
+          </div>
+
+          <!-- Fragen für Dental Start / Plus / Premium -->
+          <div id="qDs">
+            <div class="row"><label data-t="fMiss"></label>
+              <div class="pills" data-pick="missing">
+                <button type="button" data-val="nein" data-t="no"></button>
+                <button type="button" data-val="ja" data-t="yes"></button>
+              </div><input type="hidden" name="missing" value="">
+              <div class="note" id="missNote"><span data-t="fMissNote"></span><br>
+                <button type="button" class="zeklink" data-zek data-t="zekLink"></button></div></div>
+            <p class="zekhint"><span data-t="zekPointer"></span>
+              <button type="button" class="zeklink" data-zek data-t="zekLink"></button></p>
+            <div class="zekbox" id="zekBox"></div>
+          </div>
+
+          <!-- Fragen für Dental ZEK: dort zählt nicht die Lücke, sondern die Planung -->
+          <div id="qZek" style="display:none">
+            <div class="row"><label data-t="fZekPlan"></label>
+              <div class="pills" data-pick="zek_plan">
+                <button type="button" data-val="nein" data-t="no"></button>
+                <button type="button" data-val="ja" data-t="yes"></button>
+              </div><input type="hidden" name="zek_plan" value="">
+              <div class="note" id="zekNoPlanNote" data-t="zekNoPlan"></div>
+            </div>
+            <div class="row" id="zekWhenRow" style="display:none"><label data-t="fZekWhen"></label>
+              <div class="pills pills--wrap" data-pick="zek_when">
+                <button type="button" data-val="unter6" data-t="zek6u"></button>
+                <button type="button" data-val="ueber6" data-t="zek6o"></button>
+              </div><input type="hidden" name="zek_when" value="">
+              <div class="note" id="zek6Ok" data-t="zekOk6"></div>
+              <div class="warn" id="zek6No"><span data-t="zekNo6"></span>
+                <a class="btn btn--wa" id="zek6Wa" href="#" target="_blank" rel="noopener" data-t="ctaWa"></a></div>
+            </div>
+            <p class="zekhint" data-t="zekTerm"></p>
+          </div>
+        </div>
+
+        <div class="wstep" data-step="4" style="display:none">
+          <h2 data-t="w4H"></h2>
+          <div class="row"><label data-t="fZw"></label>
+            <select name="zahlweise">
+              <option value="monatlich" data-t="zw1"></option>
+              <option value="vierteljaehrlich" data-t="zw2"></option>
+              <option value="halbjaehrlich" data-t="zw3"></option>
+              <option value="jaehrlich" data-t="zw4"></option>
+            </select></div>
+          <div class="row"><label data-t="fHolder"></label>
+            <input type="text" name="kontoinhaber" autocomplete="name"></div>
+          <div class="row"><label data-t="fIban"></label>
+            <input type="text" name="iban" id="ibanIn" autocapitalize="characters" spellcheck="false"
+                   placeholder="DE00 0000 0000 0000 0000 00">
+            <div class="hint" data-t="fIbanH"></div></div>
+          <p class="secure" data-t="fSecure"></p>
+        </div>
+
+        <div class="wstep" data-step="5" style="display:none">
+          <h2 data-t="w5H"></h2>
+          <div class="summary" id="sumBox"></div>
+          <div class="pricebox" id="priceBox"></div>
+          <h3 class="subh" data-t="docsH"></h3>
+          <ul class="docs" id="docsList"></ul>
+          <div class="row"><label class="check">
+            <input type="checkbox" name="docs_ok" value="ja"><span data-t="docsOk"></span></label></div>
+          <div class="row"><label class="check">
+            <input type="checkbox" name="consent" value="ja"><span data-t="fConsent"></span></label></div>
+        </div>
+
+        <div class="hp"><label>Website</label><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+
+        <input type="hidden" name="product" value="Zahnzusatz">
+        <input type="hidden" name="type" id="fType" value="antrag">
+        <input type="hidden" name="tarif" id="fTarif" value="Individual">
+        <input type="hidden" name="lang" id="fLang" value="ro">
+        <input type="hidden" name="plan" id="planSel" value="PREMIUM">
+        <input type="hidden" name="persons" id="fPersons" value="1">
+        <input type="hidden" name="age" id="fAge" value="">
+        <input type="hidden" name="birthdates" id="fBds" value="">
+        <input type="hidden" name="members" id="fMembers" value="">
+        <input type="hidden" name="beitrag" id="fBeitrag" value="">
+        <input type="hidden" name="startbeitrag" id="fStart" value="">
+        <input type="hidden" name="beginn" id="fBeginn" value="">
+
+        <button class="btn" type="button" id="nextBtn"></button>
+        <div class="err" id="err"></div>
+        <p class="reassure" id="stepNote"></p>
+        <button class="back" type="button" id="backBtn" data-t="fBack"></button>
+      </form>
+
+      <div class="success" id="success">
+        <div class="big">✅</div>
+        <h3 data-t="okH"></h3>
+        <p data-t="okS"></p>
+        <a class="btn btn--wa" id="okWa" href="#" target="_blank" rel="noopener" data-t="okWa"></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="pbarfix" id="priceBar"><div class="wrap"><span id="pbLeft"></span><span id="pbRight"></span></div></div>
+
+  <!-- HINWEISKASTEN -->
+  <section class="wrap">
+    <div class="deadline">
+      <div class="ic">⏳</div>
+      <div><b data-t="warnT"></b><p data-t="warnS"></p></div>
+    </div>
+  </section>
+
+  <!-- ÜBER MICH -->
+  <section class="wrap">
+    <div class="about">
+      <div class="about-top">
+        <div class="ph" data-photo>T</div>
+        <div><b>Tamas</b><small data-t="aboutRole"></small></div>
+      </div>
+      <p data-t="aboutP"></p>
+      <div class="stats">
+        <div><b>3.000+</b><small data-t="s1"></small></div>
+        <div><b>0 €</b><small data-t="s2"></small></div>
+        <div><b>RO·HU·DE</b><small data-t="s3"></small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap">
+    <h2 class="sec-h" data-t="faqH"></h2>
+    <p class="sec-s" data-t="faqS"></p>
+    <div id="faq"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="impressum.html" data-t="fImp"></a>·
+      <a href="datenschutz.html" data-t="fDsg"></a>·
+      <a href="unterlagen/erstinformation.pdf" target="_blank" rel="noopener" data-t="fErst"></a>
+    </div>
+    <div data-t="fFoot"></div>
+    <div class="cross" data-t="fCross"></div>
+    <p class="disc" data-t="fDisc"></p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="wrap"><button class="btn" id="stickyBtn" data-t="stickyCta"></button></div>
+</div>
+<div class="spacer"></div>
+
+<button class="chatbtn" id="chatBtn" aria-label="Chat">💬<span class="dot"></span></button>
+<div class="chatwin" id="chatWin" role="dialog" aria-modal="false">
+  <div class="chathead">
+    <div class="ch-av" data-photo>T</div>
+    <div><b>Tamas</b><small data-t="chatSub"></small></div>
+    <button class="ch-x" id="chatClose" aria-label="×">×</button>
+  </div>
+  <div class="chatbody" id="chatBody"></div>
+  <div class="chatchips" id="chatChips"></div>
+  <div class="chatin">
+    <input type="text" id="chatIn" autocomplete="off" enterkeyhint="send">
+    <button type="button" id="chatSend" aria-label="senden">➤</button>
+  </div>
+  <p class="chatfoot" data-t="chatFoot"></p>
+</div>
+
+<script>
+/* =========================================================
+   ERGO Dental-Tarife – Tarifbeiträge je Baustein (in Cent)
+   Quelle: Versicherungsvorschlag ERGO Krankenversicherung AG,
+   KIB Tarife DS75, DS90, DS100, DVB und DVE – Stand 10/2026
+   ========================================================= */
+var MOD = {
+  DS75 : {"0-20":290,"21-25":570,"26-30":1090,"31-40":1740,"41-50":2590,"51+":3480},
+  DS90 : {"0-20": 80,"21-25":150,"26-30": 290,"31-40": 430,"41-50": 660,"51+": 960},
+  DS100: {"0-20":110,"21-25":200,"26-30": 370,"31-40": 590,"41-50": 880,"51+":1340},
+  DVB  : {"0-10":320,"11-20":1440,"21+":1190},
+  DVE  : {"0-10":190,"11-20": 630,"21+": 590}
+};
+/* Pakete = Bausteinkombinationen */
+var PACK = {
+  START  : {ds:["DS75"],                  dv:["DVB","DVE"]},
+  PLUS   : {ds:["DS75","DS90"],           dv:["DVB","DVE"]},
+  PREMIUM: {ds:["DS75","DS90","DS100"],   dv:["DVB","DVE"]}
+};
+var PLANS = ["START","PLUS","PREMIUM"];
+/* Interne Schlüssel bleiben START/PLUS/PREMIUM (Beitragstabellen, Staffel,
+   Lead-Mail, KI-Chat). Angezeigt wird der Produktname. */
+var PNAME = { START:"Dental Start", PLUS:"Dental Plus", PREMIUM:"Dental Premium",
+              ZEK:"Dental ZEK", Sofortschutz:"Dental ZEK" };
+function pn(k){ return PNAME[k] || k; }
+var WA = "4915775438676";
+/* Portraitfoto. Zum Austauschen: neues Bild quadratisch zuschneiden, als JPEG
+   speichern, in eine data:-URI umwandeln und hier einsetzen. "" = goldenes T. */
+var PHOTO = "data:image/jpeg;base64,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";
+function phImg(){ return PHOTO ? '<img src="'+PHOTO+'" alt="Tamas">' : "T"; }
+var EXAMPLE_AGE = 35;
+
+function dsBand(a){
+  if (a <= 20) return "0-20";
+  if (a <= 25) return "21-25";
+  if (a <= 30) return "26-30";
+  if (a <= 40) return "31-40";
+  if (a <= 50) return "41-50";
+  return "51+";
+}
+function dvBand(a){ return a <= 10 ? "0-10" : (a <= 20 ? "11-20" : "21+"); }
+
+/* Versicherungsbeginn = 1. des Folgemonats */
+function beginDate(){
+  var n = new Date(); return new Date(n.getFullYear(), n.getMonth()+1, 1);
+}
+/* ISO-Datum OHNE Zeitzonen-Verschiebung (toISOString würde in UTC rutschen) */
+function iso(d){
+  var m = d.getMonth()+1, t = d.getDate();
+  return d.getFullYear()+"-"+(m<10?"0":"")+m+"-"+(t<10?"0":"")+t;
+}
+/* Eintrittsalter = erreichtes Alter bei Versicherungsbeginn */
+function ageAtStart(bd){
+  var b = beginDate(), a = b.getFullYear() - bd.getFullYear();
+  var m = b.getMonth() - bd.getMonth();
+  if (m < 0 || (m === 0 && b.getDate() < bd.getDate())) a--;
+  return a;
+}
+function sum(list, band){ var s = 0; list.forEach(function(k){ s += MOD[k][band]; }); return s; }
+var MAXBD = iso(new Date());   /* kein Geburtsdatum in der Zukunft */
+/* Rollen – die Werte gehen unverändert ans Backend */
+var ROLES = ["Partner","Kind","Elternteil","Sonstige"];
+/* Leistungsbegrenzung Zahnersatz, Jahre 1-4 (in €) */
+var STAFFEL = { START:[500,1000,1500,2000], PLUS:[750,1500,2250,3000], PREMIUM:[1000,2000,3000,4000] };
+function gro(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
+
+/* Tarif ZEK (Sofortschutz): fester Beitrag, altersunabhängig ("ab 0"), kein Startbeitrag */
+var ZEK = 3760;
+
+/* Tarifbeitrag und Startbeitrag (erste 6 Monate: DS-Bausteine zur Hälfte) */
+function calc(plan, a){
+  if (plan === "Sofortschutz") return { full: ZEK, start: ZEK };
+  var ds = sum(PACK[plan].ds, dsBand(a));
+  var dv = sum(PACK[plan].dv, dvBand(a));
+  return { full: ds + dv, start: Math.round(ds/2) + dv };
+}
+function eur(c){ return (c/100).toFixed(2).replace(".", ","); }
+
+/* =========================================================
+   Texte – Backend-Werte bleiben in allen Sprachen identisch
+   ========================================================= */
+var T = {
+ro:{
+  htmlLang:"ro", ogLocale:"ro_RO", loc:"ro-RO",
+  title:"Asigurare dentară ERGO · Asigurare cu Tamas",
+  metaDesc:"ERGO Dental-Tarif: până la 100 % pentru proteze dentare, implanturi și detartraj. Fără perioadă de așteptare, fără întrebări de sănătate. Calculează prețul din data nașterii.",
+  h1:"Asigurare dentară",
+  lead:"Casa de sănătate germană (ex. AOK, TK, Barmer) plătește doar o parte. Cu ERGO Dental-Tarif primești până la 100 % din factura stomatologului – coroane, implanturi, plombe, tratament de canal și detartraj.",
+  tick1:"Până la 100 % pentru proteze dentare și implanturi",
+  tick2:"Fără perioadă de așteptare și fără întrebări de sănătate",
+  tick3:"Reziliabil lunar – fără durată minimă, fără risc",
+  brand1:"Asigurare cu", brand2:"Tamas",
+  claim:"Alege calitatea, alege echipa lui Tamas",
+  trustName:"Tamas & echipa",
+  trust:"Peste 3.000 de clienți mulțumiți în toată Germania",
+  plansH:"Calculează prețul tău în 10 secunde",
+  plansS:"Introdu data nașterii – prețul se calculează automat pentru toate cele trei pachete.",
+  bdL:"📅 Data nașterii", bdLFam:"📅 Datele de naștere ale familiei",
+  calcEx:"Exemplu pentru {age} ani – introdu data nașterii pentru prețul tău exact",
+  calcYou:"✓ Prețul tău · {age} ani · început asigurare {date}",
+  calcErr:"Te rog verifică data nașterii.",
+  tarifInd:"🧑 Individual", tarifFam:"👨‍👩‍👧‍👦 Familie",
+  priceNote:"Contribuții lunare conform tabelului oficial de contribuții ERGO (tarife DS75, DS90, DS100, DVB, DVE, stand 10/2026), în funcție de vârsta la începerea contractului. În primele 6 luni se plătește jumătate din partea de proteze dentare. Valoare orientativă – oferta obligatorie o primești scris.",
+  ribbon:"Cel mai ales",
+  perMonth:"€/lună", perMonthFam:"€/lună · total familie", yAbbr:"ani",
+  priceWas:"în loc de {x} €",
+  priceFirst6:"€/lună · primele 6 luni", priceFirst6Fam:"€/lună · primele 6 luni · total familie",
+  dealStrip:"🎁 Bonus de start: economisești {save} €",
+  dealAfter:"din luna a 7-a: <b>{full} €/lună</b>",
+  bannerDeal:"🎁 Prinde acum bonusul de start – în primele 6 luni plătești mai puțin",
+  famAdd:"+ Adaugă membru al familiei", famRemove:"Șterge",
+  roles:{Ich:"Eu", Partner:"Soț / Soție", Kind:"Copil", Elternteil:"Părinte în gospodărie", Sonstige:"Altă persoană"},
+  whoQ:"Cine este această persoană?",
+  piT:"ⓘ Perioadă de așteptare, plafoane și exemplu de calcul",
+  piWaitT:"Perioadă de așteptare",
+  piWaitS:"Nu există – protecția începe din ziua de început a contractului. Dar: ce a recomandat sau a început medicul înainte nu este acoperit în acest pachet. Pentru asta există tariful ZEK, mai jos.",
+  piMissT:"Dinți care lipsesc deja",
+  piMissS:"Dinții care lipsesc la începerea contractului și nu sunt încă înlocuiți definitiv nu sunt asigurați – nici dacă mergi la medic abia peste doi ani. Contează data la care ai pierdut dintele, nu data tratamentului. Din momentul în care golul este înlocuit definitiv pe cheltuiala ta, locul acela este din nou asigurat normal. Dacă ai deja un gol, tariful ZEK de mai jos asigură și dinții lipsă.",
+  piStaffelT:"Suma maximă în primii 4 ani",
+  piStaffelS:"Pentru proteze dentare există la început un plafon, care crește în fiecare an. Plombele, tratamentul de canal, parodontoza și detartrajul sunt fără plafon de la bun început. În caz de accident plafoanele dispar imediat.",
+  piYear:"Anul de asigurare", piMax:"Suma maximă",
+  infoRows:["Anul 1","Anii 1–2","Anii 1–3","Anii 1–4"],
+  infoUnl:"Din anul 5 de asigurare: fără niciun plafon",
+  exA:"Exemplu 1 · Coroană în anul 1", exB:"Exemplu 2 · Implant în anul 3",
+  exBill:"Factura stomatologului", exGkv:"Casa de sănătate (ex. AOK) plătește",
+  exPlan:"{plan} plătește ({pct} %)", exOwn:"Plătești tu",
+  exCap:"Limitat la {cap} € ({yl}) – fără plafon ar fi fost {want} €.",
+  exNoCap:"Din anul 5 plafonul dispare: {plan} plătește {want} €, tu doar {own} €.",
+  calcYouFam:"✓ Prețul vostru · {n} persoane · început asigurare {date}",
+  quoteTxtFam:"Pachet {plan} · {n} persoane<br><b>{price} €/lună</b> · primele 6 luni {start} €",
+  startLine:"primele 6 luni doar {x} €",
+  planSubs:{START:"Dental-Schutz 75 + Dental-Vorsorge",PLUS:"Dental-Schutz 90 + Dental-Vorsorge",PREMIUM:"Dental-Schutz 100 + Dental-Vorsorge"},
+  planF:{
+    START:["75 % proteze dentare, implanturi, inlay-uri (inclusiv partea casei)","100 % plombe, tratament de canal, parodontoză, scrâșnit","100 % detartraj profesional, fără limită","Aparat dentar copii 100 %, max. 2.000 €","Plafon proteze: 500 € în anul 1 → 2.000 € în 4 ani"],
+    PLUS:["90 % proteze dentare, implanturi, inlay-uri (inclusiv partea casei)","100 % plombe, tratament de canal, parodontoză, scrâșnit","100 % detartraj profesional, fără limită","Albire max. 250 € la fiecare 2 ani de contract","Plafon proteze: 750 € în anul 1 → 3.000 € în 4 ani"],
+    PREMIUM:["100 % proteze dentare și implanturi – fără contribuție proprie","100 % anestezie generală + 50 € forfetar pentru transport","100 % detartraj profesional, fără limită","100 % plombe, tratament de canal, parodontoză, scrâșnit","Plafon proteze: 1.000 € în anul 1 → 4.000 € în 4 ani"]
+  },
+  planCta:"Solicită acest pachet", planMore:"Mai multe informații",
+  askTag:"Chat cu asistentul digital", askLive:"imediat",
+  askBubble:"Salut! Sunt asistentul digital al lui Tamas. Întreabă-mă orice despre {plan} – îți răspund pe loc, aici în chat.",
+  askPh:"Scrie întrebarea ta…",
+  askWa:"Preferi direct cu Tamas? Scrie-i lui Tamas pe WhatsApp",
+  chatHelloPlan:"Te uiți la pachetul {plan}. Ce vrei să știi despre el?",
+  waIntTxt:"Bună Tamas! Mă interesează pachetul {plan} de la asigurarea dentară ERGO.",
+  sofTag:"Protecție imediată",
+  sofSub:"Tarif ZEK · doar proteze dentare",
+  sofH:"Medicul ți-a recomandat deja o lucrare?",
+  sofPer:"€/lună · la orice vârstă",
+  sofPerFam:"€/lună · total familie",
+  sofS:"În pachetele de mai sus lucrările deja recomandate sau începute nu sunt acoperite. Exact pentru asta există tariful ZEK – preț unic, indiferent de vârstă.",
+  sof1:"Acoperire și pentru lucrări deja recomandate de medic",
+  sof2:"Dublează suma fixă a casei – împreună cu casa până la 100 % din factură",
+  sof3:"Dinții lipsă sunt și ei asigurați",
+  sof4:"Asigurare retroactivă: și lucrări începute în ultimele 6 luni",
+  sofCondT:"Condiții și limite – citește înainte",
+  sofCond:[
+    ["Lucrarea poate fi deja <b>recomandată</b> la semnare. Protecția începe din ziua începerii contractului.", 0],
+    ["<b>Asigurare retroactivă 6 luni:</b> o lucrare începută în cele 6 luni dinainte de începerea contractului este acoperită, dacă se termină după începere.", 0],
+    ["<b>Dinții lipsă</b> sunt asigurați.", 0],
+    ["<b>Plafon:</b> max. 1.000 € în primul an, max. 2.000 € în primii doi ani.", 0],
+    ["<b>Durată minimă 24 de luni.</b> După aceea se poate rezilia la sfârșitul fiecărei luni.", 0],
+    ["Doar <b>proteze dentare</b>: coroane, punți, proteze și lucrări pe implant – plus reparații, provizorii și lucrări de laborator.", 0],
+    ["<b>Nu</b> include plombe, tratament de canal, detartraj sau aparat dentar – pentru acestea îți trebuie un pachet de mai sus.", 1],
+    ["Decontare în limitele oficiale de onorarii pentru stomatologi (GOZ).", 0],
+    ["Dacă <b>casa de sănătate (ex. AOK) nu plătește nimic</b> – de exemplu la tratament în străinătate – atunci nici ZEK nu plătește.", 1],
+    ["Fără perioadă de așteptare, fără întrebări de sănătate. Doar pentru asigurați la casa germană (GKV), cu domiciliu și cont bancar în Germania.", 0]
+  ],
+  zekLink:"Ce plătește tariful ZEK?",
+  zekSwitch:"Trec pe protecția imediată (ZEK)",
+  zekOn:"✅ Ai ales protecția imediată (ZEK)",
+  sofCta:"Solicită Dental ZEK",
+  sofNote:"Principiul e simplu: cât pune casa pentru lucrare, atât mai pune ERGO deasupra. Pentru copii cu aparat dentar deja recomandat există tariful KFO – scrie-mi, îți fac oferta separat.",
+  funnelH:"Primește oferta ta personală",
+  funnelS:"Fără obligații, fără cost. Alege cum vrei să continuăm.",
+  optWaT:"Scrie-mi pe WhatsApp", optWaS:"Răspuns de obicei în câteva minute",
+  optOfferT:"Completează formularul", optOfferS:"2 minute – primești oferta scrisă",
+  optCallT:"Vreau să fiu sunat", optCallS:"Te sun eu, când îți convine",
+  formOfferH:"Date pentru ofertă", formOfferS:"Verific totul și îți trimit oferta oficială ERGO.",
+  formCallH:"Programează un telefon", formCallS:"Spune-mi când te pot suna.",
+  quoteTxt:"Pachet {plan} · {age} ani<br><b>{price} €/lună</b> · primele 6 luni {start} €",
+  quoteTxtSof:"Protecție imediată (ZEK) · {n} pers.<br><b>{price} €/lună</b>",
+  ctaH:"Gata? Cererea durează 2 minute",
+  ctaS:"Completezi tu toate datele, eu verific și trimit mai departe la ERGO.",
+  ctaBtn:"Începe cererea · 2 minute",
+  ctaNote:"Fără obligații – contractul se încheie abia după ce eu verific cererea și ERGO o acceptă.",
+  ctaNote2:"14 zile drept de retragere · îți răspund în 24 de ore.",
+  ctaCb:"Vreau o ofertă personalizată – sună-mă tu",
+  cbH:"Ofertă personalizată",
+  cbS:"Spune-mi pe scurt despre ce este vorba – te sun eu.",
+  cbMsg:"Întrebarea sau dorința ta (opțional)",
+  cbSend:"Cere să fii sunat",
+  eCbName:"Te rog scrie-mi numele tău.",
+  ctaWa:"Ai întrebări? Scrie-mi pe WhatsApp",
+  wStep:"Pasul {n} din {t}",
+  w1H:"Cine se asigură?", w2H:"Cum te pot contacta?", w3H:"Două întrebări scurte",
+  w4H:"Date bancare pentru contribuție", w5H:"Verifică și semnează",
+  wNext1:"Continuă cu datele de contact", wNext2:"Continuă cu întrebările",
+  wNext3:"Continuă cu datele bancare", wNext4:"Verifică totul", wSubmit:"Trimite cererea",
+  fAnrede:"Formulă de adresare", anrHerr:"Domnul", anrFrau:"Doamna",
+  fVorname:"Prenume", fNachname:"Nume",
+  fBeginn:"Început asigurare", fBeginnH:"De regulă prima zi a lunii următoare.",
+  fPlz:"Cod poștal", fOrt:"Localitate", fStreet:"Stradă și număr",
+  fKanal:"Cum vrei să primești oferta și documentele?",
+  kanWa:"Pe WhatsApp", kanMail:"Pe e-mail", kanBoth:"Pe amândouă",
+  waNote:"✅ Important: pe numărul de mai sus trebuie să ai WhatsApp activ – acolo îți trimit documentele.",
+  fMailOpt:"E-mail (opțional)", fMailReq:"E-mail",
+  fMailHOpt:"Nu este obligatoriu dacă primești totul pe WhatsApp.",
+  fMailHReq:"Acolo trimit oferta și documentele contractuale.",
+  sumKanal:"Primesc documentele",
+  fGkv:"Ești asigurat la o casă de sănătate germană (ex. AOK)?",
+  yes:"Da", no:"Nu",
+  gkvWarn:"Acest tarif este doar pentru asigurații la casa germană (GKV). Scrie-mi și căutăm împreună o soluție.",
+  w3Hz:"Două întrebări despre lucrarea ta",
+  fZekPlan:"Medicul a planificat deja lucrarea – de exemplu cu un deviz (Heil- und Kostenplan)?",
+  zekNoPlan:"✅ Perfect. Atunci ești asigurat de la începerea contractului pentru tot ce urmează. Nu uita: primii doi ani au plafon (1.000 € / 2.000 €).",
+  fZekWhen:"Când a fost făcut primul deviz sau când a început tratamentul?",
+  zek6u:"acum mai puțin de 6 luni", zek6o:"acum mai mult de 6 luni",
+  zekOk6:"✅ Bine – exact pentru asta este tariful ZEK. Lucrarea este acoperită dacă se termină după începerea contractului.",
+  zekNo6:"Atenție: pentru această lucrare ZEK nu mai plătește, pentru că primul deviz este mai vechi de șase luni. Tot ce se planifică de acum înainte este acoperit de la începerea contractului. Scrie-mi și ne uităm împreună peste cazul tău.",
+  zekTerm:"La tariful ZEK durata minimă a contractului este de 24 de luni. După aceea îl poți rezilia la sfârșitul fiecărei luni.",
+  eZekPlan:"Te rog răspunde la întrebarea despre deviz.",
+  eZekWhen:"Te rog spune când a fost făcut devizul.",
+  fMiss:"Îți lipsește vreun dinte, fără să ai coroană, punte sau implant pe locul lui?",
+  fBedarf:"Ce este cel mai important pentru tine?",
+  fBedarfH:"Răspunsul tău intră în documentația de consultanță pe care o primești odată cu cererea.",
+  bed1:"Proteze dentare", bed2:"Profilaxie și detartraj", bed3:"Aparat dentar copii", bed4:"Preț cât mai mic",
+  fZw:"Cât de des să fie încasată contribuția?", zw1:"Lunar", zw2:"Trimestrial", zw3:"Semestrial", zw4:"Anual",
+  fHolder:"Titularul contului", fIban:"IBAN",
+  fIbanH:"O găsești pe cardul bancar sau în aplicația băncii.",
+  fSepa:"Autorizez ERGO să încaseze contribuția prin debit direct SEPA.",
+  fSecure:"🔒 Transmis criptat · azi nu se încasează nimic – abia după ce ERGO acceptă cererea",
+  docsH:"Documentele tale", docsOk:"Am primit și am citit documentele de mai sus.",
+  docs:[["Condiții de asigurare (PDF)","unterlagen/bedingungen.pdf"],
+        ["Fișa de informare a produsului (PDF)","unterlagen/produktinformationsblatt.pdf"],
+        ["Prima informare a intermediarului (PDF)","unterlagen/erstinformation.pdf"],
+        ["Informare privind dreptul de retragere (PDF)","unterlagen/widerrufsbelehrung.pdf"]],
+  signH:"Semnătura ta", signHint:"Semnează cu degetul", signClear:"Șterge semnătura",
+  sumChange:"Modifică", sumName:"Nume", sumAddr:"Adresă",
+  pbPers:"pers.", pbMonth:"pe lună", pbAfter:"din luna a 7-a {x} €", pbFirst:"Primele 6 luni", pbLater:"Din luna a 7-a",
+  eName:"Te rog completează prenumele și numele.",
+  eBd:"Te rog completează data nașterii.",
+  eBeginn:"Te rog alege data de început.",
+  ePhone:"Te rog verifică numărul de telefon.",
+  eMail:"Te rog completează adresa de e-mail – acolo trimit documentele.",
+  eMailBad:"Adresa de e-mail nu pare corectă – verific-o sau las-o goală.",
+  eKanal:"Te rog alege cum vrei să primești documentele.",
+  ePlz:"Codul poștal are 5 cifre.",
+  eAddr:"Te rog completează strada și localitatea.",
+  eGkv:"Te rog răspunde la întrebarea despre casa de sănătate.",
+  eGkvNo:"Fără asigurare la casa germană nu se poate încheia acest tarif.",
+  eMiss:"Te rog răspunde la întrebarea despre dinții lipsă.",
+  eBedarf:"Te rog alege ce este cel mai important pentru tine.",
+  eHolder:"Te rog completează titularul contului.",
+  eIban:"IBAN-ul nu pare corect – te rog verifică-l.",
+  eSepa:"Fără mandatul SEPA nu putem încasa contribuția.",
+  eDocs:"Te rog confirmă că ai primit documentele.",
+  eConsent:"Te rog acceptă politica de confidențialitate.",
+  eSign:"Te rog semnează cu degetul în câmpul de mai sus.",
+  fName:"Nume și prenume", fPhone:"Telefon / WhatsApp", fBd:"Data nașterii",
+  fMail:"E-mail (opțional)", fMailH:"Doar dacă vrei oferta și pe e-mail.",
+  fPlan:"Pachetul dorit", fPlanSof:"Protecție imediată (ZEK / KFO)", fPlanAsk:"Nu știu încă – vreau consultanță",
+  fPersons:"Câte persoane de asigurat?",
+  fMiss2:"Dinți care lipsesc",
+  sumZekPlan:"Deviz existent",
+  zekPointer:"Ți-a recomandat medicul deja ceva sau ai o lucrare începută? Pentru asta nu plătesc pachetele de mai sus – există tariful ZEK.",
+  fMissNote:"✅ Nicio problemă, poți încheia oricum. Pentru dintele care lipsește acum asigurarea încă nu plătește. Dar dacă îl pui o dată pe banii tăi, de atunci locul acela e din nou acoperit complet. Iar dacă tocmai acest dinte vrei să-l rezolvi, atunci îți trebuie tariful ZEK – ne uităm împreună.",
+  fTreatNote:"✅ Bine că spui. Pentru asta există un tarif separat (ZEK, la copii KFO), care plătește și dacă medicul ți-a recomandat deja ceva. Verific dacă la tine se mai poate.",
+  fTime:"Când te pot suna?", fTime1:"Oricând", fTime2:"Dimineața", fTime3:"După-amiaza", fTime4:"Seara",
+  fConsent:"Sunt de acord să fiu contactat pentru această solicitare și am citit politica de confidențialitate.",
+  fSend:"Trimite cererea", fBack:"← Înapoi",
+  errReq:"Te rog completează numele, telefonul și data nașterii și bifează acordul.",
+  errSend:"Ceva nu a funcționat. Scrie-mi direct pe WhatsApp.",
+  okH:"Mulțumesc! Am primit cererea.", okS:"Te contactez în cel mai scurt timp cu oferta ta personală.",
+  okWa:"Scrie-mi acum pe WhatsApp",
+  stepsH:"Cum funcționează", stepsS:"Patru pași, fără drumuri la birou și fără telefon obligatoriu.",
+  st1T:"Completezi cererea", st1S:"Online, direct pe telefon – 5 minute.",
+  st2T:"Eu verific", st2S:"Mă uit peste datele tale și pregătesc cererea.",
+  st3T:"Semnezi", st3S:"Îți trimit cererea gata completată, o semnezi, iar eu o duc mai departe la ERGO. Fără griji – totul merge digital, nu trebuie să printezi nimic.",
+  st4T:"Contractul vine prin poștă", st4S:"Originalul ajunge la tine în 4-5 zile lucrătoare.",
+  warnT:"Fără întrebări de sănătate – dar nu amâna",
+  warnS:"Nu completezi niciun chestionar medical. Dar cu cât intri mai devreme, cu atât mai repede dispar plafoanele din primii 4 ani – iar un tratament deja recomandat necesită tariful separat ZEK.",
+  aboutRole:"Agent ERGO · asigurări pentru familii",
+  aboutP:"Lucrez ca agent ERGO și explic asigurările în limba în care te simți acasă. Fără termeni complicați: îți spun ce acoperă, ce nu acoperă și dacă merită pentru situația ta.",
+  s1:"clienți", s2:"costul consultanței", s3:"limbi",
+  faqH:"Întrebări frecvente", faqS:"Răspunsuri scurte și cinstite.",
+  faq:[
+    ["Cine poate încheia?","Doar persoanele asigurate în casa de sănătate germană (GKV), cu domiciliu stabil și cont bancar în Germania."],
+    ["Ce sunt plafoanele din primii ani?","În primii 4 ani există o sumă maximă pentru proteze dentare, care crește anual: la Dental Premium 1.000 € în primul an, 2.000 € în doi ani, 3.000 € în trei, 4.000 € în patru. Din anul 5 nu mai există plafon. În caz de accident plafoanele dispar. Plombele, canalul, parodontoza și detartrajul nu au plafon."],
+    ["Ce înseamnă până la 5× GOZ?","GOZ este lista oficială de tarife a stomatologilor din Germania. Mulți medici buni facturează peste tariful simplu. Tarifele acoperă până la de 5 ori acest tarif – deci și la medici scumpi rămâi fără surprize."],
+    ["Dinții lipsă sunt asigurați?","Nu în tarifele DS. Pentru dinți lipsă și tratamente deja recomandate există tariful separat ZEK cu protecție imediată."],
+    ["De unde știe asigurarea dacă îmi lipsește un dinte?","Întrebări de sănătate nu există. Dar când ceri bani înapoi, ERGO are dreptul să verifice: trebuie să dai informații corecte și să îți dezlegi stomatologii de obligația păstrării secretului, ca ERGO să poată cere fișa medicală și documentele tratamentului. Din ele se vede când ai pierdut un dinte sau când ți-a fost recomandat un tratament. ERGO te poate trimite și la un control la un stomatolog desemnat de ea. De aceea: la cerere răspunde cinstit."],
+    ["Cum trimit o factură?","Foarte simplu: faci o poză facturii de la stomatolog și mi-o trimiți pe WhatsApp. Îmi spui și IBAN-ul pe care vrei să primești banii înapoi. Restul fac eu."],
+    ["Mă pot trata și în străinătate, într-o țară din UE?","Da. În UE, în Spațiul Economic European și în Elveția ești acoperit pe durata șederilor temporare – de exemplu la stomatolog în România sau Ungaria, când ești acasă în concediu. Se rambursează cel mult cât ar fi costat același tratament în Germania. În afara UE, SEE și Elveției nu există acoperire. Atenție la tariful ZEK: dacă casa de sănătate germană nu plătește nimic pentru tratamentul din străinătate, atunci nici ZEK nu plătește."],
+    ["Îmi crește prima cu vârsta?","Da, la tarifele Dental. Prima se stabilește pe grupe de vârstă; după împlinirea a 21, 26, 31, 41 și 51 de ani intri în grupa următoare, din luna imediat următoare. În interiorul unei grupe prima rămâne aceeași – cineva de 32 de ani plătește deci același preț până la 40. Dacă prima crește, ai drept de reziliere în termen de două luni. Tariful ZEK face excepție: 37,60 € la orice vârstă, prima nu crește cu vârsta."],
+    ["Pot renunța la contract?","Tarifele Dental (DS/DV) sunt reziliabile lunar, fără durată minimă. La tariful ZEK durata minimă a contractului este de 24 de luni; după aceea se poate rezilia tot la sfârșitul fiecărei luni."]
+  ],
+  chatSub:"Răspund de obicei în câteva minute",
+  chatHello:"Bună! 👋 Sunt Tamas. Alege o întrebare de mai jos – sau scrie-mi direct pe WhatsApp.",
+  chatEnd:"Asta a fost tot ce am pregătit aici. Pentru orice altceva scrie-mi pe WhatsApp, răspund personal.",
+  chatWa:"Scrie-i lui Tamas pe WhatsApp",
+  chatPh:"Scrie întrebarea ta…",
+  chatFoot:"Răspunsuri automate, orientative. Valabile sunt doar condițiile ERGO și oferta personală a lui Tamas.",
+  chatOff:"Momentan nu pot răspunde liber. Alege una dintre întrebările de mai jos sau scrie-mi direct pe WhatsApp.",
+  stickyCta:"Începe cererea · 2 minute",
+  fImp:"Impressum", fDsg:"Politica de confidențialitate", fErst:"Prima informare",
+  fFoot:"Asigurare cu Tamas · Agent ERGO",
+  fCross:"Vezi și: asigurare auto (Kfz) · asigurare de protecție juridică",
+  fDisc:"Aceasta nu este o pagină oficială ERGO, ci pagina unui agent independent de asigurări. Procentele se referă la cheltuielile decontabile, nu la suma de pe factură. Informațiile sunt un rezumat; valabile sunt doar condițiile contractuale ERGO (tarife DS75, DS90, DS100, DVB, DVE). Calculul de pe pagină este orientativ și nu reprezintă o ofertă.",
+  waText:"Bună Tamas! Vreau o ofertă pentru asigurarea dentară ERGO."
+},
+hu:{
+  htmlLang:"hu", ogLocale:"hu_HU", loc:"hu-HU",
+  title:"ERGO fogászati biztosítás · Biztosítás Tamassal",
+  metaDesc:"ERGO Dental-Tarif: akár 100 % a fogpótlásra, implantátumra és a fogkőeltávolításra. Várakozási idő és egészségügyi kérdések nélkül. Számold ki a díjat a születési dátumból.",
+  h1:"Fogbiztosítás",
+  lead:"A német betegkassza (pl. AOK, TK, Barmer) csak egy részt fizet. Az ERGO Dental-Tarif akár a teljes fogorvosi számlát állja – korona, implantátum, tömés, gyökérkezelés és fogkőeltávolítás.",
+  tick1:"Akár 100 % a fogpótlásra és implantátumra",
+  tick2:"Várakozási idő és egészségügyi kérdések nélkül",
+  tick3:"Havonta felmondható – nincs minimális tartam, nincs kockázat",
+  brand1:"Biztosítás", brand2:"Tamassal",
+  claim:"Válaszd a minőséget, válaszd Tamas csapatát",
+  trustName:"Tamas & csapata",
+  trust:"Több mint 3.000 elégedett ügyfél egész Németországban",
+  plansH:"Számold ki a díjad 10 másodperc alatt",
+  plansS:"Add meg a születési dátumod – a díj mindhárom csomagra automatikusan kiszámolódik.",
+  bdL:"📅 Születési dátum", bdLFam:"📅 A család születési dátumai",
+  calcEx:"Példa {age} évre – add meg a születési dátumod a pontos díjért",
+  calcYou:"✓ A te díjad · {age} év · biztosítás kezdete {date}",
+  calcErr:"Kérlek ellenőrizd a születési dátumot.",
+  tarifInd:"🧑 Egyedül", tarifFam:"👨‍👩‍👧‍👦 Család",
+  priceNote:"Havi díjak az ERGO hivatalos díjtáblázata szerint (DS75, DS90, DS100, DVB, DVE tarifák, 10/2026), a belépéskori életkor alapján. Az első 6 hónapban a fogpótlási rész fele fizetendő. Tájékoztató érték – a kötelező érvényű ajánlatot írásban kapod.",
+  ribbon:"A legnépszerűbb",
+  perMonth:"€/hó", perMonthFam:"€/hó · család összesen", yAbbr:"év",
+  priceWas:"{x} € helyett",
+  priceFirst6:"€/hó · első 6 hónap", priceFirst6Fam:"€/hó · első 6 hónap · család összesen",
+  dealStrip:"🎁 Indulási bónusz: {save} € megtakarítás",
+  dealAfter:"a 7. hónaptól: <b>{full} €/hó</b>",
+  bannerDeal:"🎁 Szerezd meg most az indulási bónuszt – az első 6 hónapban kevesebbet fizetsz",
+  famAdd:"+ Családtag hozzáadása", famRemove:"Törlés",
+  roles:{Ich:"Én", Partner:"Házastárs / élettárs", Kind:"Gyermek", Elternteil:"Szülő a háztartásban", Sonstige:"Más személy"},
+  whoQ:"Ki ez a személy?",
+  piT:"ⓘ Várakozási idő, keretek és számpélda",
+  piWaitT:"Várakozási idő",
+  piWaitS:"Nincs – a védelem a szerződés kezdetétől él. De: amit az orvos előtte már javasolt vagy elkezdett, azt ez a csomag nem fedezi. Arra való a lenti ZEK tarifa.",
+  piMissT:"Már hiányzó fogak",
+  piMissS:"Azok a fogak, amelyek a szerződés kezdetekor már hiányoznak és még nincsenek véglegesen pótolva, nincsenek biztosítva – akkor sem, ha csak két év múlva mész orvoshoz. Az számít, mikor veszett el a fog, nem a kezelés időpontja. Amint a hiányt saját költségen véglegesen pótolták, az a hely újra normálisan biztosított. Ha már van hiányzó fogad, a lenti ZEK tarifa a hiányzó fogakat is biztosítja.",
+  piStaffelT:"Felső határ az első 4 évben",
+  piStaffelS:"A fogpótlásra az elején keret van, ami évről évre nő. A tömés, a gyökér- és parodontózis-kezelés és a fogkőeltávolítás az első naptól korlátlan. Baleset esetén a keretek azonnal megszűnnek.",
+  piYear:"Biztosítási év", piMax:"Felső határ",
+  infoRows:["1. év","1–2. év","1–3. év","1–4. év"],
+  infoUnl:"Az 5. biztosítási évtől: nincs több keret",
+  exA:"1. példa · Korona az 1. évben", exB:"2. példa · Implantátum a 3. évben",
+  exBill:"Fogorvosi számla", exGkv:"A betegkassza (pl. AOK) fizet",
+  exPlan:"A {plan} fizet ({pct} %)", exOwn:"Te fizetsz",
+  exCap:"{cap} €-ra korlátozva ({yl}) – keret nélkül {want} € lett volna.",
+  exNoCap:"Az 5. évtől a keret megszűnik: a {plan} {want} €-t fizet, neked csak {own} € marad.",
+  calcYouFam:"✓ A ti díjatok · {n} fő · biztosítás kezdete {date}",
+  quoteTxtFam:"{plan} csomag · {n} fő<br><b>{price} €/hó</b> · első 6 hónap {start} €",
+  startLine:"első 6 hónap csak {x} €",
+  planSubs:{START:"Dental-Schutz 75 + Dental-Vorsorge",PLUS:"Dental-Schutz 90 + Dental-Vorsorge",PREMIUM:"Dental-Schutz 100 + Dental-Vorsorge"},
+  planF:{
+    START:["75 % fogpótlás, implantátum, inlay (a kassza részével együtt)","100 % tömés, gyökérkezelés, parodontózis, harapásemelő sín","100 % professzionális fogkőeltávolítás, korlát nélkül","Gyerek fogszabályzó 100 %, max. 2.000 €","Fogpótlás keret: 1. évben 500 € → 4 év alatt 2.000 €"],
+    PLUS:["90 % fogpótlás, implantátum, inlay (a kassza részével együtt)","100 % tömés, gyökérkezelés, parodontózis, harapásemelő sín","100 % professzionális fogkőeltávolítás, korlát nélkül","Fehérítés max. 250 € kétévente","Fogpótlás keret: 1. évben 750 € → 4 év alatt 3.000 €"],
+    PREMIUM:["100 % fogpótlás és implantátum – önrész nélkül","100 % altatás + 50 € utazási átalány","100 % professzionális fogkőeltávolítás, korlát nélkül","100 % tömés, gyökérkezelés, parodontózis, harapásemelő sín","Fogpótlás keret: 1. évben 1.000 € → 4 év alatt 4.000 €"]
+  },
+  planCta:"Ezt a csomagot kérem", planMore:"További információ",
+  askTag:"Chat a digitális asszisztenssel", askLive:"azonnal",
+  askBubble:"Szia! Tamas digitális asszisztense vagyok. Kérdezz bármit a {plan} csomagról – azonnal válaszolok, itt a chatben.",
+  askPh:"Írd ide a kérdésed…",
+  askWa:"Inkább közvetlenül Tamassal? Írj Tamasnak WhatsAppon",
+  chatHelloPlan:"A {plan} csomagot nézed. Mit szeretnél tudni róla?",
+  waIntTxt:"Szia Tamas! Érdekel az ERGO fogászati biztosítás {plan} csomagja.",
+  sofTag:"Azonnali védelem",
+  sofSub:"ZEK tarifa · csak fogpótlás",
+  sofH:"Az orvos már javasolt fogpótlást?",
+  sofPer:"€/hó · minden életkorban",
+  sofPerFam:"€/hó · család összesen",
+  sofS:"A fenti csomagokba a már javasolt vagy elkezdett munka nem fér bele. Pontosan erre való a ZEK tarifa – egységes díj, életkortól függetlenül.",
+  sof1:"Fizet a már javasolt fogpótlásra is",
+  sof2:"Megduplázza a kassza fix támogatását – a kasszával együtt a számla 100 %-áig",
+  sof3:"A hiányzó fogak is biztosítva vannak",
+  sof4:"Visszamenőleges fedezet: a legutóbbi 6 hónapban megkezdett munkára is",
+  sofCondT:"Feltételek és korlátok – olvasd el előtte",
+  sofCond:[
+    ["A kezelést az orvos <b>már javasolhatta</b> a szerződéskötés előtt. A védelem a szerződés kezdetétől él.", 0],
+    ["<b>6 hónap visszamenőleges fedezet:</b> a szerződés kezdete előtti 6 hónapban megkezdett munka is fedezve van, ha a kezdés után fejeződik be.", 0],
+    ["A <b>hiányzó fogak</b> biztosítva vannak.", 0],
+    ["<b>Keret:</b> az első évben max. 1.000 €, az első két évben max. 2.000 €.", 0],
+    ["<b>Minimális szerződéstartam 24 hónap.</b> Utána minden hónap végére felmondható.", 0],
+    ["Csak <b>fogpótlás</b>: korona, híd, protézis és implantátumra rögzített pótlás – plusz javítás, ideiglenes pótlás és laborköltség.", 0],
+    ["<b>Nem</b> tartalmaz tömést, gyökérkezelést, fogkőeltávolítást vagy fogszabályzót – ehhez a fenti csomagok egyike kell.", 1],
+    ["Térítés a fogorvosi díjszabás (GOZ) hivatalos keretein belül.", 0],
+    ["Ha a <b>betegkassza (pl. AOK) semmit sem fizet</b> – például külföldi kezelésnél –, akkor a ZEK sem fizet.", 1],
+    ["Várakozási idő és egészségügyi kérdések nélkül. Csak a német betegkasszában (GKV) biztosítottaknak, németországi lakcímmel és bankszámlával.", 0]
+  ],
+  zekLink:"Mit fizet a ZEK tarifa?",
+  zekSwitch:"Váltás az azonnali védelemre (ZEK)",
+  zekOn:"✅ Az azonnali védelmet (ZEK) választottad",
+  sofCta:"Dental ZEK igénylése",
+  sofNote:"Az elv egyszerű: amennyit a kassza ad a munkára, ugyanannyit tesz rá az ERGO. Gyerekeknek, akiknek már javasolták a fogszabályzót, a KFO tarifa való – írj, külön elkészítem az ajánlatot.",
+  funnelH:"Kérd a személyes ajánlatod",
+  funnelS:"Kötelezettség és költség nélkül. Válaszd, hogyan folytassuk.",
+  optWaT:"Írj WhatsAppon", optWaS:"Általában pár percen belül válaszolok",
+  optOfferT:"Töltsd ki az űrlapot", optOfferS:"2 perc – írásos ajánlatot kapsz",
+  optCallT:"Hívjatok vissza", optCallS:"Felhívlak, amikor neked jó",
+  formOfferH:"Adatok az ajánlathoz", formOfferS:"Mindent ellenőrzök, és elküldöm a hivatalos ERGO ajánlatot.",
+  formCallH:"Visszahívás kérése", formCallS:"Írd meg, mikor hívhatlak.",
+  quoteTxt:"{plan} csomag · {age} év<br><b>{price} €/hó</b> · első 6 hónap {start} €",
+  quoteTxtSof:"Azonnali védelem (ZEK) · {n} fő<br><b>{price} €/hó</b>",
+  ctaH:"Kész? Az igénylés 2 percig tart",
+  ctaS:"Minden adatot te töltesz ki, én ellenőrzöm és továbbítom az ERGO felé.",
+  ctaBtn:"Igénylés indítása · 2 perc",
+  ctaNote:"Kötelezettség nélkül – a szerződés csak akkor jön létre, ha én ellenőriztem és az ERGO elfogadta.",
+  ctaNote2:"14 nap elállási jog · 24 órán belül jelentkezem.",
+  ctaCb:"Személyre szabott ajánlatot kérek – hívj vissza",
+  cbH:"Személyre szabott ajánlat",
+  cbS:"Írd meg röviden, miről van szó – felhívlak.",
+  cbMsg:"Kérdésed vagy kérésed (nem kötelező)",
+  cbSend:"Visszahívást kérek",
+  eCbName:"Kérlek add meg a neved.",
+  ctaWa:"Kérdésed van? Írj WhatsAppon",
+  wStep:"{n}. lépés / {t}",
+  w1H:"Ki lesz biztosítva?", w2H:"Hogyan érlek el?", w3H:"Két rövid kérdés",
+  w4H:"Bankszámla a díjhoz", w5H:"Ellenőrzés és aláírás",
+  wNext1:"Tovább a kapcsolati adatokhoz", wNext2:"Tovább a kérdésekhez",
+  wNext3:"Tovább a bankadatokhoz", wNext4:"Mindent ellenőrzök", wSubmit:"Igénylés beküldése",
+  fAnrede:"Megszólítás", anrHerr:"Úr", anrFrau:"Asszony",
+  fVorname:"Keresztnév", fNachname:"Vezetéknév",
+  fBeginn:"Biztosítás kezdete", fBeginnH:"Általában a következő hónap első napja.",
+  fPlz:"Irányítószám", fOrt:"Város", fStreet:"Utca és házszám",
+  fKanal:"Hogyan szeretnéd megkapni az ajánlatot és a dokumentumokat?",
+  kanWa:"WhatsAppon", kanMail:"E-mailben", kanBoth:"Mindkettőn",
+  waNote:"✅ Fontos: a fenti számon legyen aktív WhatsApp – oda küldöm a dokumentumokat.",
+  fMailOpt:"E-mail (nem kötelező)", fMailReq:"E-mail",
+  fMailHOpt:"Nem kötelező, ha mindent WhatsAppon kapsz.",
+  fMailHReq:"Oda küldöm az ajánlatot és a szerződéses dokumentumokat.",
+  sumKanal:"Dokumentumok küldése",
+  fGkv:"Német betegkasszában (pl. AOK) vagy biztosítva?",
+  yes:"Igen", no:"Nem",
+  gkvWarn:"Ez a tarifa csak a német betegkasszában (GKV) biztosítottaknak szól. Írj nekem, keresünk megoldást.",
+  w3Hz:"Két kérdés a kezelésedről",
+  fZekPlan:"Az orvos már megtervezte a fogpótlást – például költségtervvel (Heil- und Kostenplan)?",
+  zekNoPlan:"✅ Rendben. Akkor a szerződés kezdetétől minden jövőbeni munkára biztosítva vagy. Ne feledd: az első két évben keret van (1.000 € / 2.000 €).",
+  fZekWhen:"Mikor készült az első költségterv, vagy mikor kezdődött a kezelés?",
+  zek6u:"kevesebb mint 6 hónapja", zek6o:"több mint 6 hónapja",
+  zekOk6:"✅ Jó hír – pontosan erre való a ZEK tarifa. A munka fedezve van, ha a szerződés kezdete után fejeződik be.",
+  zekNo6:"Figyelem: erre a munkára a ZEK már nem fizet, mert az első költségterv hat hónapnál régebbi. Minden, amit ezután terveznek, a szerződés kezdetétől fedezve van. Írj nekem, és együtt átnézzük az esetedet.",
+  zekTerm:"A ZEK tarifánál 24 hónap a minimális szerződéstartam. Utána minden hónap végére felmondhatod.",
+  eZekPlan:"Kérlek válaszolj a költségtervről szóló kérdésre.",
+  eZekWhen:"Kérlek add meg, mikor készült a költségterv.",
+  fMiss:"Hiányzik valamelyik fogad úgy, hogy nincs a helyén korona, híd vagy implantátum?",
+  fBedarf:"Mi a legfontosabb neked?",
+  fBedarfH:"A válaszod bekerül a tanácsadási dokumentációba, amit az igényléssel együtt megkapsz.",
+  bed1:"Fogpótlás", bed2:"Szűrés és fogkőeltávolítás", bed3:"Gyerek fogszabályzó", bed4:"Minél olcsóbb legyen",
+  fZw:"Milyen gyakran vonják le a díjat?", zw1:"Havonta", zw2:"Negyedévente", zw3:"Félévente", zw4:"Évente",
+  fHolder:"Számlatulajdonos", fIban:"IBAN",
+  fIbanH:"A bankkártyádon vagy a banki alkalmazásban találod.",
+  fSepa:"Felhatalmazom az ERGO-t a díj SEPA-csoportos beszedésére.",
+  fSecure:"🔒 Titkosítva továbbítva · ma semmit nem vonnak le – csak miután az ERGO elfogadta az igénylést",
+  docsH:"A dokumentumaid", docsOk:"A fenti dokumentumokat megkaptam és elolvastam.",
+  docs:[["Biztosítási feltételek (PDF)","unterlagen/bedingungen.pdf"],
+        ["Termékismertető (PDF)","unterlagen/produktinformationsblatt.pdf"],
+        ["Közvetítői első tájékoztatás (PDF)","unterlagen/erstinformation.pdf"],
+        ["Elállási tájékoztató (PDF)","unterlagen/widerrufsbelehrung.pdf"]],
+  signH:"Aláírásod", signHint:"Írd alá az ujjaddal", signClear:"Aláírás törlése",
+  sumChange:"Módosít", sumName:"Név", sumAddr:"Cím",
+  pbPers:"fő", pbMonth:"havonta", pbAfter:"a 7. hónaptól {x} €", pbFirst:"Első 6 hónap", pbLater:"A 7. hónaptól",
+  eName:"Kérlek add meg a kereszt- és vezetéknevet.",
+  eBd:"Kérlek add meg a születési dátumot.",
+  eBeginn:"Kérlek válassz kezdési dátumot.",
+  ePhone:"Kérlek ellenőrizd a telefonszámot.",
+  eMail:"Kérlek add meg az e-mail címet – oda küldöm a dokumentumokat.",
+  eMailBad:"Az e-mail cím nem tűnik helyesnek – javítsd ki vagy hagyd üresen.",
+  eKanal:"Kérlek válaszd ki, hogyan kapd meg a dokumentumokat.",
+  ePlz:"Az irányítószám 5 számjegyű.",
+  eAddr:"Kérlek add meg az utcát és a várost.",
+  eGkv:"Kérlek válaszolj a betegkasszáról szóló kérdésre.",
+  eGkvNo:"Német betegkassza nélkül ez a tarifa nem köthető.",
+  eMiss:"Kérlek válaszolj a hiányzó fogakról szóló kérdésre.",
+  eBedarf:"Kérlek válaszd ki, mi a legfontosabb neked.",
+  eHolder:"Kérlek add meg a számlatulajdonost.",
+  eIban:"Az IBAN nem tűnik helyesnek – kérlek ellenőrizd.",
+  eSepa:"SEPA-megbízás nélkül nem tudjuk beszedni a díjat.",
+  eDocs:"Kérlek erősítsd meg, hogy megkaptad a dokumentumokat.",
+  eConsent:"Kérlek fogadd el az adatvédelmi tájékoztatót.",
+  eSign:"Kérlek írd alá az ujjaddal a fenti mezőben.",
+  fName:"Név", fPhone:"Telefon / WhatsApp", fBd:"Születési dátum",
+  fMail:"E-mail (nem kötelező)", fMailH:"Csak ha e-mailben is kéred az ajánlatot.",
+  fPlan:"Kívánt csomag", fPlanSof:"Azonnali védelem (ZEK / KFO)", fPlanAsk:"Még nem tudom – tanácsot kérek",
+  fPersons:"Hány személyt biztosítunk?",
+  fMiss2:"Hiányzó fogak",
+  sumZekPlan:"Meglévő költségterv",
+  zekPointer:"Javasolt már valamit az orvos, vagy folyik egy kezelés? Arra a fenti csomagok nem fizetnek – erre való a ZEK tarifa.",
+  fMissNote:"✅ Semmi gond, így is köthetsz szerződést. A most hiányzó fogra a biztosítás még nem fizet. De ha egyszer a saját pénzeden pótoltatod, onnantól az a hely újra teljesen fedezve van. Ha pedig épp ezt a fogat szeretnéd megcsináltatni, akkor a ZEK tarifa kell – megnézzük együtt.",
+  fTreatNote:"✅ Jó, hogy szólsz. Erre van egy külön tarifa (ZEK, gyerekeknél KFO), ami akkor is fizet, ha az orvos már javasolt valamit. Megnézem, hogy nálad még belefér-e.",
+  fTime:"Mikor hívhatlak?", fTime1:"Bármikor", fTime2:"Délelőtt", fTime3:"Délután", fTime4:"Este",
+  fConsent:"Hozzájárulok, hogy ebben az ügyben felvegyék velem a kapcsolatot, és elolvastam az adatvédelmi tájékoztatót.",
+  fSend:"Kérés elküldése", fBack:"← Vissza",
+  errReq:"Kérlek add meg a neved, a telefonszámod és a születési dátumot, és fogadd el a hozzájárulást.",
+  errSend:"Valami nem sikerült. Írj inkább WhatsAppon.",
+  okH:"Köszönöm! Megkaptam a kérésed.", okS:"Hamarosan jelentkezem a személyes ajánlatoddal.",
+  okWa:"Írj most WhatsAppon",
+  stepsH:"Így működik", stepsS:"Négy lépés, irodába járás és kötelező telefon nélkül.",
+  st1T:"Kitöltöd az igénylést", st1S:"Online, egyenesen a telefonodról – 5 perc.",
+  st2T:"Én ellenőrzöm", st2S:"Átnézem az adataidat és előkészítem az igénylést.",
+  st3T:"Aláírod", st3S:"Elküldöm neked a kész igénylést aláírásra. Utána én továbbítom az ERGO felé. Semmi gond – minden digitálisan megy, nem kell semmit kinyomtatnod.",
+  st4T:"A szerződés postán érkezik", st4S:"Az eredetit 4-5 munkanapon belül megkapod.",
+  warnT:"Egészségügyi kérdés nincs – de ne halogasd",
+  warnS:"Semmilyen orvosi kérdőívet nem kell kitölteni. Minél hamarabb kezdesz, annál előbb tűnnek el az első 4 év keretei – a már javasolt kezeléshez pedig a külön ZEK tarifa kell.",
+  aboutRole:"ERGO tanácsadó · biztosítások családoknak",
+  aboutP:"ERGO tanácsadóként dolgozom, és azon a nyelven magyarázom el a biztosítást, amelyen otthon érzed magad. Szakzsargon nélkül: mit fizet, mit nem, és megéri-e neked.",
+  s1:"ügyfél", s2:"a tanácsadás ára", s3:"nyelv",
+  faqH:"Gyakori kérdések", faqS:"Rövid, őszinte válaszok.",
+  faq:[
+    ["Ki köthet szerződést?","Csak a német betegkasszában (GKV) biztosított személyek, állandó németországi lakcímmel és bankszámlával."],
+    ["Mik ezek a keretek az első években?","Az első 4 évben a fogpótlásra felső határ van, ami évről évre nő: a Dental Premiumnál az első évben 1.000 €, két év alatt 2.000 €, három alatt 3.000 €, négy alatt 4.000 €. Az 5. évtől nincs korlát. Baleset esetén a keretek megszűnnek. A tömés, gyökérkezelés, parodontózis és a fogkőeltávolítás korlát nélküli."],
+    ["Mit jelent az 5-szörös GOZ?","A GOZ a német fogorvosi díjszabás. Sok jó orvos az egyszeres tétel fölött számláz. A tarifák ennek az ötszöröséig fizetnek – így a drágább orvosnál sincs meglepetés."],
+    ["A hiányzó fogak biztosítva vannak?","A DS tarifákban nem. Hiányzó fogakra és már javasolt kezelésre a külön ZEK tarifa való, azonnali védelemmel."],
+    ["Honnan tudja a biztosító, hogy hiányzik-e egy fogam?","Egészségügyi kérdések nincsenek. De amikor pénzt kérsz vissza, az ERGO utánanézhet: köteles vagy a valóságnak megfelelően tájékoztatást adni, és a kezelő fogorvosaidat feloldani a titoktartás alól, hogy az ERGO bekérhesse a kórlapot és a kezelési dokumentációt. Ebből látszik, mikor veszett el egy fog, vagy mikor javasoltak egy kezelést. Az ERGO ezen kívül megvizsgáltathat egy általa felkért fogorvossal. Ezért: az igénylésnél válaszolj őszintén."],
+    ["Hogyan küldöm be a számlát?","Nagyon egyszerűen: lefotózod a fogorvosi számlát és elküldöd nekem WhatsAppon. Megírod mellé az IBAN-t, amire a pénzt visszavárod. A többit én intézem."],
+    ["Külföldön, egy EU-s országban is kezeltethetem magam?","Igen. Az EU-ban, az Európai Gazdasági Térségben és Svájcban átmeneti tartózkodás alatt is van fedezeted – például nyaraláskor a magyarországi vagy romániai fogorvosnál. Legfeljebb annyit térítenek, amennyibe ugyanaz a kezelés Németországban került volna. Az EU-n, az EGT-n és Svájcon kívül nincs fedezet. A ZEK tarifánál figyelj: ha a német betegkassza a külföldi kezelésre semmit nem fizet, akkor a ZEK sem fizet."],
+    ["Nő a díjam az életkorral?","Igen, a Dental tarifáknál. A díj korcsoportok szerint alakul; a 21., 26., 31., 41. és 51. életév betöltése után a következő csoportba kerülsz, a rá következő hónaptól. Egy csoporton belül a díj változatlan – egy 32 éves tehát 40 éves koráig ugyanannyit fizet. Díjemelés esetén két hónapon belül felmondhatsz. A ZEK tarifa kivétel: 37,60 € minden életkorban, a díj nem nő az életkorral."],
+    ["Fel lehet mondani?","A Dental tarifák (DS/DV) havonta felmondhatók, minimális tartam nélkül. A ZEK tarifánál 24 hónap a minimális szerződéstartam; utána szintén minden hónap végére felmondható."]
+  ],
+  chatSub:"Általában pár percen belül válaszolok",
+  chatHello:"Szia! 👋 Tamas vagyok. Válassz egy kérdést alulról – vagy írj nekem WhatsAppon.",
+  chatEnd:"Ennyit készítettem ide elő. Bármi másra írj WhatsAppon, személyesen válaszolok.",
+  chatWa:"Írj Tamasnak WhatsAppon",
+  chatPh:"Írd ide a kérdésed…",
+  chatFoot:"Automatikus, tájékoztató válaszok. Kizárólag az ERGO feltételei és Tamas személyes ajánlata érvényes.",
+  chatOff:"Most nem tudok szabadon válaszolni. Válassz egy kérdést alulról, vagy írj nekem WhatsAppon.",
+  stickyCta:"Igénylés indítása · 2 perc",
+  fImp:"Impresszum", fDsg:"Adatvédelem", fErst:"Első tájékoztatás",
+  fFoot:"Biztosítás Tamassal · ERGO tanácsadó",
+  fCross:"Lásd még: gépjármű-biztosítás (Kfz) · jogvédelmi biztosítás",
+  fDisc:"Ez nem az ERGO hivatalos oldala, hanem egy önálló biztosításközvetítő oldala. A százalékok a térítendő költségekre vonatkoznak, nem a számla végösszegére. Az információk összefoglalók; kizárólag az ERGO szerződési feltételei (DS75, DS90, DS100, DVB, DVE tarifák) érvényesek. Az oldal számítása tájékoztató jellegű, és nem jelent ajánlatot.",
+  waText:"Szia Tamas! Ajánlatot kérek az ERGO fogászati biztosításra."
+},
+de:{
+  htmlLang:"de", ogLocale:"de_DE", loc:"de-DE",
+  title:"ERGO Dental-Tarif · Versicherung mit Tamas",
+  metaDesc:"ERGO Dental-Tarif: bis zu 100 % für Zahnersatz, Implantate und professionelle Zahnreinigung. Ohne Wartezeit, ohne Gesundheitsfragen. Beitrag aus dem Geburtsdatum berechnen.",
+  h1:"Zahnzusatz&shy;versicherung",
+  lead:"Die Krankenkasse (z. B. AOK, TK, Barmer) zahlt nur einen Teil. Mit dem ERGO Dental-Tarif bekommst du bis zu 100 % der Zahnarztrechnung zurück – Kronen, Implantate, Füllungen, Wurzelbehandlung und Zahnreinigung.",
+  tick1:"Bis zu 100 % für Zahnersatz und Implantate",
+  tick2:"Ohne Wartezeit und ohne Gesundheitsfragen",
+  tick3:"Monatlich kündbar – keine Mindestlaufzeit, kein Risiko",
+  brand1:"Versicherung mit", brand2:"Tamas",
+  claim:"Wähl Qualität, wähl das Team von Tamas",
+  trustName:"Tamas & Team",
+  trust:"Über 3.000 zufriedene Kunden in ganz Deutschland",
+  plansH:"Beitrag in 10 Sekunden berechnen",
+  plansS:"Geburtsdatum eingeben – der Beitrag wird für alle drei Pakete automatisch berechnet.",
+  bdL:"📅 Geburtsdatum", bdLFam:"📅 Geburtsdaten der Familie",
+  calcEx:"Beispiel für {age} Jahre – gib dein Geburtsdatum ein für deinen genauen Beitrag",
+  calcYou:"✓ Dein Beitrag · {age} Jahre · Versicherungsbeginn {date}",
+  calcErr:"Bitte prüfe das Geburtsdatum.",
+  tarifInd:"🧑 Einzeln", tarifFam:"👨‍👩‍👧‍👦 Familie",
+  priceNote:"Monatsbeiträge laut offizieller ERGO Beitragstabelle (Tarife DS75, DS90, DS100, DVB, DVE, Stand 10/2026), abhängig vom Alter bei Versicherungsbeginn. In den ersten 6 Monaten gilt der Startbeitrag: der Zahnersatz-Anteil zur Hälfte. Orientierungswert – verbindlich ist dein schriftlicher Vorschlag.",
+  ribbon:"Am häufigsten gewählt",
+  perMonth:"€/Monat", perMonthFam:"€/Monat · Familie gesamt", yAbbr:"J.",
+  priceWas:"statt {x} €",
+  priceFirst6:"€/Monat · erste 6 Monate", priceFirst6Fam:"€/Monat · erste 6 Monate · Familie gesamt",
+  dealStrip:"🎁 Starterbonus: du sparst {save} €",
+  dealAfter:"ab dem 7. Monat: <b>{full} €/Monat</b>",
+  bannerDeal:"🎁 Starterbonus jetzt sichern – in den ersten 6 Monaten weniger zahlen",
+  famAdd:"+ Familienmitglied hinzufügen", famRemove:"Entfernen",
+  roles:{Ich:"Ich", Partner:"Ehepartner/-in", Kind:"Kind", Elternteil:"Elternteil im Haushalt", Sonstige:"Weitere Person"},
+  whoQ:"Wer ist diese Person?",
+  piT:"ⓘ Wartezeit, Grenzen und Rechenbeispiel",
+  piWaitT:"Wartezeit",
+  piWaitS:"Gibt es nicht – der Schutz gilt ab Versicherungsbeginn. Aber: Was der Zahnarzt vorher schon angeraten oder begonnen hat, ist in diesem Paket nicht versichert. Dafür gibt es den Tarif ZEK weiter unten.",
+  piMissT:"Schon fehlende Zähne",
+  piMissS:"Zähne, die bei Vertragsbeginn bereits fehlen und noch nicht dauerhaft ersetzt sind, sind nicht versichert – auch dann nicht, wenn du erst zwei Jahre später zum Zahnarzt gehst. Es zählt das Datum, an dem der Zahn verloren ging, nicht das Datum der Behandlung. Sobald die Lücke auf eigene Kosten dauerhaft ersetzt ist, ist diese Stelle wieder ganz normal mitversichert. Wenn du schon eine Lücke hast: Der Tarif ZEK weiter unten versichert auch fehlende Zähne.",
+  piStaffelT:"Höchstleistung in den ersten 4 Jahren",
+  piStaffelS:"Für Zahnersatz gilt am Anfang eine Obergrenze, die jedes Jahr mitwächst. Zahnbehandlung, Wurzel- und Parodontosebehandlung sowie die Zahnreinigung sind von Anfang an unbegrenzt. Bei einem Unfall entfallen die Grenzen sofort.",
+  piYear:"Versicherungsjahr", piMax:"Höchstleistung",
+  infoRows:["1. Jahr","1.–2. Jahr","1.–3. Jahr","1.–4. Jahr"],
+  infoUnl:"Ab dem 5. Versicherungsjahr: keine Begrenzung mehr",
+  exA:"Beispiel 1 · Krone im 1. Jahr", exB:"Beispiel 2 · Implantat im 3. Jahr",
+  exBill:"Zahnarztrechnung", exGkv:"Krankenkasse (z. B. AOK) zahlt",
+  exPlan:"{plan} zahlt ({pct} %)", exOwn:"Dein Eigenanteil",
+  exCap:"Gedeckelt auf {cap} € ({yl}) – ohne Grenze wären es {want} € gewesen.",
+  exNoCap:"Ab dem 5. Versicherungsjahr entfällt die Grenze: {plan} zahlt {want} €, für dich bleiben {own} €.",
+  calcYouFam:"✓ Euer Beitrag · {n} Personen · Versicherungsbeginn {date}",
+  quoteTxtFam:"Paket {plan} · {n} Personen<br><b>{price} €/Monat</b> · erste 6 Monate {start} €",
+  startLine:"erste 6 Monate nur {x} €",
+  planSubs:{START:"Dental-Schutz 75 + Dental-Vorsorge",PLUS:"Dental-Schutz 90 + Dental-Vorsorge",PREMIUM:"Dental-Schutz 100 + Dental-Vorsorge"},
+  planF:{
+    START:["75 % Zahnersatz, Implantate, Inlays (inkl. Kassenanteil)","100 % Füllungen, Wurzel, Parodontose, Knirscherschiene","100 % professionelle Zahnreinigung, ohne Begrenzung","Kieferorthopädie Kinder 100 %, max. 2.000 €","Zahnersatz-Staffel: 500 € im 1. Jahr → 2.000 € in 4 Jahren"],
+    PLUS:["90 % Zahnersatz, Implantate, Inlays (inkl. Kassenanteil)","100 % Füllungen, Wurzel, Parodontose, Knirscherschiene","100 % professionelle Zahnreinigung, ohne Begrenzung","Bleaching bis 250 € je 2 Versicherungsjahre","Zahnersatz-Staffel: 750 € im 1. Jahr → 3.000 € in 4 Jahren"],
+    PREMIUM:["100 % Zahnersatz und Implantate – kein Eigenanteil","100 % Schmerzausschaltung + 50 € Fahrkostenpauschale","100 % professionelle Zahnreinigung, ohne Begrenzung","100 % Füllungen, Wurzel, Parodontose, Knirscherschiene","Zahnersatz-Staffel: 1.000 € im 1. Jahr → 4.000 € in 4 Jahren"]
+  },
+  planCta:"Dieses Paket beantragen", planMore:"Mehr Informationen",
+  askTag:"Chat mit dem digitalen Assistenten", askLive:"sofort",
+  askBubble:"Hallo! Ich bin der digitale Assistent von Tamas. Frag mich alles zu {plan} – ich antworte dir sofort, hier im Chat.",
+  askPh:"Schreib deine Frage…",
+  askWa:"Lieber direkt mit Tamas? Schreib Tamas auf WhatsApp",
+  chatHelloPlan:"Du schaust dir {plan} an. Was möchtest du dazu wissen?",
+  waIntTxt:"Hallo Tamas! Ich habe Interesse am Paket {plan} der ERGO Zahnzusatzversicherung.",
+  sofTag:"Sofortschutz",
+  sofSub:"Tarif ZEK · nur Zahnersatz",
+  sofH:"Der Zahnarzt hat schon Zahnersatz angeraten?",
+  sofPer:"€/Monat · in jedem Alter",
+  sofPerFam:"€/Monat · Familie gesamt",
+  sofS:"In den Paketen oben sind schon angeratene oder begonnene Maßnahmen nicht versichert. Genau dafür gibt es den Tarif ZEK – ein Beitrag, unabhängig vom Alter.",
+  sof1:"Leistet auch für schon angeratenen Zahnersatz",
+  sof2:"Verdoppelt den Festzuschuss der Kasse – zusammen bis 100 % der Rechnung",
+  sof3:"Fehlende Zähne sind mitversichert",
+  sof4:"Rückwärts-Versicherung: auch für Maßnahmen der letzten 6 Monate",
+  sofCondT:"Bedingungen und Grenzen – bitte vorher lesen",
+  sofCond:[
+    ["Die Maßnahme darf bei Abschluss bereits <b>angeraten</b> sein. Der Schutz gilt ab Versicherungsbeginn.", 0],
+    ["<b>Rückwärts-Versicherung über 6 Monate:</b> Eine Maßnahme, die in den sechs Monaten vor Versicherungsbeginn begonnen wurde, ist mitversichert, wenn sie nach Versicherungsbeginn beendet wird.", 0],
+    ["<b>Fehlende Zähne</b> sind mitversichert.", 0],
+    ["<b>Summenbegrenzung:</b> max. 1.000 € im ersten, max. 2.000 € in den ersten zwei Versicherungsjahren.", 0],
+    ["<b>Mindestvertragsdauer 24 Monate.</b> Danach zum Ende jedes Monats kündbar.", 0],
+    ["Nur <b>Zahnersatz</b>: Kronen, Brücken, Prothesen und implantatgetragener Zahnersatz – dazu Reparaturen, Provisorien und Laborarbeiten.", 0],
+    ["<b>Nicht</b> enthalten: Füllungen, Wurzelbehandlung, Zahnreinigung, Kieferorthopädie – dafür braucht es eines der Pakete oben.", 1],
+    ["Erstattung innerhalb des Gebührenrahmens der Gebührenordnung für Zahnärzte (GOZ).", 0],
+    ["Zahlt die <b>gesetzliche Kasse (z. B. AOK) gar nichts</b> – zum Beispiel bei Behandlung im Ausland –, leistet auch ZEK nicht.", 1],
+    ["Ohne Wartezeit, ohne Gesundheitsfragen. Nur für gesetzlich Krankenversicherte mit Wohnsitz und Bankverbindung in Deutschland.", 0]
+  ],
+  zekLink:"Was zahlt der Tarif ZEK?",
+  zekSwitch:"Auf Sofortschutz (ZEK) wechseln",
+  zekOn:"✅ Ausgewählt: Sofortschutz (ZEK)",
+  sofCta:"Dental ZEK beantragen",
+  sofNote:"Das Prinzip: Was die Kasse für den Zahnersatz zahlt, legt ERGO noch einmal obendrauf. Für Kinder mit schon angeratener Zahnspange gibt es den Tarif KFO – schreib mir, das Angebot mache ich separat.",
+  funnelH:"Dein persönliches Angebot",
+  funnelS:"Unverbindlich und kostenlos. Wähle, wie es weitergeht.",
+  optWaT:"Schreib mir auf WhatsApp", optWaS:"Antwort meist in wenigen Minuten",
+  optOfferT:"Formular ausfüllen", optOfferS:"2 Minuten – du bekommst das Angebot schriftlich",
+  optCallT:"Rückruf vereinbaren", optCallS:"Ich rufe an, wenn es dir passt",
+  formOfferH:"Angaben für dein Angebot", formOfferS:"Ich prüfe alles und schicke dir den offiziellen ERGO Vorschlag.",
+  formCallH:"Rückruf vereinbaren", formCallS:"Sag mir, wann ich anrufen darf.",
+  quoteTxt:"Paket {plan} · {age} Jahre<br><b>{price} €/Monat</b> · erste 6 Monate {start} €",
+  quoteTxtSof:"Sofortschutz (ZEK) · {n} Pers.<br><b>{price} €/Monat</b>",
+  ctaH:"Bereit? Der Antrag dauert 2 Minuten",
+  ctaS:"Du füllst alles selbst aus, ich prüfe und reiche bei ERGO ein.",
+  ctaBtn:"Antrag starten · 2 Minuten",
+  ctaNote:"Unverbindlich – der Vertrag kommt erst zustande, wenn ich den Antrag geprüft und ERGO ihn angenommen hat.",
+  ctaNote2:"14 Tage Widerrufsrecht · ich melde mich innerhalb von 24 Stunden.",
+  ctaCb:"Ich möchte ein individuelles Angebot – ruf mich an",
+  cbH:"Individuelles Angebot",
+  cbS:"Sag mir kurz, worum es geht – ich rufe dich an.",
+  cbMsg:"Deine Frage oder dein Wunsch (optional)",
+  cbSend:"Rückruf anfordern",
+  eCbName:"Bitte deinen Namen angeben.",
+  ctaWa:"Noch Fragen? Schreib mir auf WhatsApp",
+  wStep:"Schritt {n} von {t}",
+  w1H:"Wer wird versichert?", w2H:"Wie erreiche ich dich?", w3H:"Zwei kurze Fragen",
+  w4H:"Bankverbindung für den Beitrag", w5H:"Prüfen und unterschreiben",
+  wNext1:"Weiter zu den Kontaktdaten", wNext2:"Weiter zu den Fragen",
+  wNext3:"Weiter zur Bankverbindung", wNext4:"Alles prüfen", wSubmit:"Antrag verbindlich einreichen",
+  fAnrede:"Anrede", anrHerr:"Herr", anrFrau:"Frau",
+  fVorname:"Vorname", fNachname:"Nachname",
+  fBeginn:"Versicherungsbeginn", fBeginnH:"Üblich ist der Erste des nächsten Monats.",
+  fPlz:"PLZ", fOrt:"Ort", fStreet:"Straße und Hausnummer",
+  fKanal:"Wie möchtest du Angebot und Unterlagen bekommen?",
+  kanWa:"Per WhatsApp", kanMail:"Per E-Mail", kanBoth:"Beides",
+  waNote:"✅ Wichtig: Unter der Nummer oben muss WhatsApp aktiv sein – dorthin schicke ich die Unterlagen.",
+  fMailOpt:"E-Mail (optional)", fMailReq:"E-Mail",
+  fMailHOpt:"Nicht nötig, wenn du alles über WhatsApp bekommst.",
+  fMailHReq:"Dorthin schicke ich Angebot und Vertragsunterlagen.",
+  sumKanal:"Unterlagen bekomme ich",
+  fGkv:"Bist du in einer deutschen gesetzlichen Krankenkasse (z. B. AOK) versichert?",
+  yes:"Ja", no:"Nein",
+  gkvWarn:"Dieser Tarif gilt nur für gesetzlich Krankenversicherte (GKV). Schreib mir, dann suchen wir gemeinsam eine Lösung.",
+  w3Hz:"Zwei Fragen zu deiner Behandlung",
+  fZekPlan:"Hat der Zahnarzt den Zahnersatz schon geplant – zum Beispiel mit einem Heil- und Kostenplan?",
+  zekNoPlan:"✅ Gut. Dann bist du ab Versicherungsbeginn für alles versichert, was danach kommt. Denk dran: in den ersten zwei Jahren gilt eine Höchstsumme (1.000 € / 2.000 €).",
+  fZekWhen:"Wann wurde der erste Plan erstellt oder die Behandlung begonnen?",
+  zek6u:"vor weniger als 6 Monaten", zek6o:"vor mehr als 6 Monaten",
+  zekOk6:"✅ Gut – genau dafür gibt es den Tarif ZEK. Die Maßnahme ist mitversichert, wenn sie nach Versicherungsbeginn fertig wird.",
+  zekNo6:"Achtung: Für diese Maßnahme zahlt ZEK nicht mehr, weil die erste Planung älter als sechs Monate ist. Alles, was ab jetzt geplant wird, ist ab Versicherungsbeginn dabei. Schreib mir, dann schauen wir uns deinen Fall gemeinsam an.",
+  zekTerm:"Beim Tarif ZEK gilt eine Mindestvertragsdauer von 24 Monaten. Danach kannst du zum Ende jedes Monats kündigen.",
+  eZekPlan:"Bitte die Frage zum Heil- und Kostenplan beantworten.",
+  eZekWhen:"Bitte angeben, wann der Plan erstellt wurde.",
+  fMiss:"Fehlt dir ein Zahn, ohne dass eine Krone, Brücke oder ein Implantat drin ist?",
+  fBedarf:"Was ist dir am wichtigsten?",
+  fBedarfH:"Deine Antwort kommt in die Beratungsdokumentation, die du mit dem Antrag bekommst.",
+  bed1:"Zahnersatz", bed2:"Vorsorge und Zahnreinigung", bed3:"Zahnspange fürs Kind", bed4:"Möglichst günstig",
+  fZw:"Wie oft soll der Beitrag abgebucht werden?", zw1:"Monatlich", zw2:"Vierteljährlich", zw3:"Halbjährlich", zw4:"Jährlich",
+  fHolder:"Kontoinhaber", fIban:"IBAN",
+  fIbanH:"Steht auf deiner Bankkarte oder in der Banking-App.",
+  fSepa:"Ich ermächtige ERGO, den Beitrag per SEPA-Lastschrift einzuziehen.",
+  fSecure:"🔒 Verschlüsselt übertragen · heute wird nichts abgebucht – erst wenn ERGO den Antrag angenommen hat",
+  docsH:"Deine Unterlagen", docsOk:"Ich habe die Unterlagen oben erhalten und gelesen.",
+  docs:[["Versicherungsbedingungen (PDF)","unterlagen/bedingungen.pdf"],
+        ["Produktinformationsblatt (PDF)","unterlagen/produktinformationsblatt.pdf"],
+        ["Erstinformation des Vermittlers (PDF)","unterlagen/erstinformation.pdf"],
+        ["Widerrufsbelehrung (PDF)","unterlagen/widerrufsbelehrung.pdf"]],
+  signH:"Deine Unterschrift", signHint:"Mit dem Finger unterschreiben", signClear:"Unterschrift löschen",
+  sumChange:"Ändern", sumName:"Name", sumAddr:"Adresse",
+  pbPers:"Pers.", pbMonth:"pro Monat", pbAfter:"ab dem 7. Monat {x} €", pbFirst:"Erste 6 Monate", pbLater:"Ab dem 7. Monat",
+  eName:"Bitte Vor- und Nachname ausfüllen.",
+  eBd:"Bitte das Geburtsdatum ausfüllen.",
+  eBeginn:"Bitte einen Versicherungsbeginn wählen.",
+  ePhone:"Bitte die Telefonnummer prüfen.",
+  eMail:"Bitte die E-Mail-Adresse ausfüllen – dorthin schicke ich die Unterlagen.",
+  eMailBad:"Die E-Mail-Adresse scheint nicht zu stimmen – bitte korrigieren oder leer lassen.",
+  eKanal:"Bitte auswählen, wie du die Unterlagen bekommen möchtest.",
+  ePlz:"Die PLZ hat 5 Ziffern.",
+  eAddr:"Bitte Straße und Ort ausfüllen.",
+  eGkv:"Bitte die Frage zur Krankenkasse beantworten.",
+  eGkvNo:"Ohne gesetzliche Krankenversicherung ist dieser Tarif nicht abschließbar.",
+  eMiss:"Bitte die Frage zu fehlenden Zähnen beantworten.",
+  eBedarf:"Bitte auswählen, was dir am wichtigsten ist.",
+  eHolder:"Bitte den Kontoinhaber ausfüllen.",
+  eIban:"Die IBAN scheint nicht zu stimmen – bitte prüfen.",
+  eSepa:"Ohne SEPA-Mandat können wir den Beitrag nicht einziehen.",
+  eDocs:"Bitte bestätigen, dass du die Unterlagen erhalten hast.",
+  eConsent:"Bitte die Datenschutzerklärung akzeptieren.",
+  eSign:"Bitte oben mit dem Finger unterschreiben.",
+  fName:"Vor- und Nachname", fPhone:"Telefon / WhatsApp", fBd:"Geburtsdatum",
+  fMail:"E-Mail (optional)", fMailH:"Nur, wenn du das Angebot auch per Mail willst.",
+  fPlan:"Gewünschtes Paket", fPlanSof:"Sofortschutz (ZEK / KFO)", fPlanAsk:"Weiß ich noch nicht – bitte beraten",
+  fPersons:"Wie viele Personen?",
+  fMiss2:"Fehlende Zähne",
+  sumZekPlan:"Heil- und Kostenplan",
+  zekPointer:"Hat dir der Zahnarzt schon etwas empfohlen oder läuft eine Behandlung? Dafür zahlen die Pakete oben nicht – dafür gibt es den Tarif ZEK.",
+  fMissNote:"✅ Kein Problem, abschließen kannst du trotzdem. Für den Zahn, der jetzt fehlt, zahlt die Versicherung nur noch nicht. Lässt du die Lücke einmal auf eigene Kosten schließen, ist die Stelle ab dann wieder voll dabei. Und wenn du genau diesen Zahn machen lassen willst, brauchst du den Tarif ZEK – das schauen wir uns zusammen an.",
+  fTreatNote:"✅ Gut, dass du das sagst. Dafür gibt es einen eigenen Tarif (ZEK, bei Kindern KFO), der auch zahlt, wenn der Zahnarzt schon etwas empfohlen hat. Ich schaue, ob das bei dir noch geht.",
+  fTime:"Wann darf ich anrufen?", fTime1:"Jederzeit", fTime2:"Vormittags", fTime3:"Nachmittags", fTime4:"Abends",
+  fConsent:"Ich bin damit einverstanden, zu dieser Anfrage kontaktiert zu werden, und habe die Datenschutzerklärung gelesen.",
+  fSend:"Anfrage senden", fBack:"← Zurück",
+  errReq:"Bitte Name, Telefon und Geburtsdatum ausfüllen und die Einwilligung bestätigen.",
+  errSend:"Da hat etwas nicht funktioniert. Schreib mir gern direkt auf WhatsApp.",
+  okH:"Danke! Anfrage ist angekommen.", okS:"Ich melde mich zeitnah mit deinem persönlichen Angebot.",
+  okWa:"Jetzt auf WhatsApp schreiben",
+  stepsH:"So läuft es ab", stepsS:"Vier Schritte, ohne Bürotermin und ohne Pflichttelefonat.",
+  st1T:"Du füllst den Antrag aus", st1S:"Online am Handy – 5 Minuten.",
+  st2T:"Ich prüfe", st2S:"Ich schaue deine Angaben durch und bereite den Antrag vor.",
+  st3T:"Du unterschreibst", st3S:"Ich schicke dir den fertigen Antrag zum Unterschreiben. Danach reiche ich ihn bei ERGO ein. Keine Sorge – alles läuft digital, du musst nichts ausdrucken.",
+  st4T:"Der Vertrag kommt per Post", st4S:"Das Original bekommst du in 4 bis 5 Werktagen nach Hause.",
+  warnT:"Keine Gesundheitsfragen – trotzdem nicht aufschieben",
+  warnS:"Du füllst keinen Gesundheitsbogen aus. Aber je früher du einsteigst, desto schneller fallen die Summenbegrenzungen der ersten 4 Jahre weg – und für eine schon angeratene Behandlung braucht es den eigenen Tarif ZEK.",
+  aboutRole:"ERGO Vermittler · Versicherungen für Familien",
+  aboutP:"Ich arbeite als ERGO Vermittler und erkläre Versicherungen in der Sprache, in der du dich zu Hause fühlst. Ohne Fachkauderwelsch: was gezahlt wird, was nicht, und ob es sich für dich lohnt.",
+  s1:"Kunden", s2:"Beratungskosten", s3:"Sprachen",
+  faqH:"Häufige Fragen", faqS:"Kurze, ehrliche Antworten.",
+  faq:[
+    ["Wer kann abschließen?","Nur gesetzlich Krankenversicherte mit ständigem Wohnsitz und Bankverbindung in Deutschland."],
+    ["Was sind die Summenbegrenzungen in den ersten Jahren?","In den ersten 4 Jahren gilt für Zahnersatz eine Höchstsumme, die jedes Jahr steigt: bei Dental Premium 1.000 € im ersten Jahr, 2.000 € in zwei Jahren, 3.000 € in drei, 4.000 € in vier. Ab dem 5. Jahr gibt es keine Begrenzung. Bei einem Unfall entfallen die Begrenzungen. Füllungen, Wurzel- und Parodontosebehandlung sowie die Zahnreinigung sind unbegrenzt."],
+    ["Was heißt Erstattung bis zum 5-fachen Satz?","Die GOZ ist die Gebührenordnung für Zahnärzte. Viele gute Praxen rechnen über dem einfachen Satz ab. Die Tarife leisten bis zum 5,0-fachen Satz – damit bleibt auch beim teuren Zahnarzt nichts an dir hängen."],
+    ["Sind fehlende Zähne mitversichert?","In den DS-Tarifen nicht. Für fehlende Zähne und bereits angeratene Behandlungen gibt es den eigenen Tarif ZEK mit Sofortleistung."],
+    ["Woher weiß die Versicherung, ob mir ein Zahn fehlt?","Gesundheitsfragen gibt es keine. Aber wenn du Geld zurückhaben willst, darf ERGO nachsehen: Du musst wahrheitsgemäß Auskunft geben und deine Zahnärzte von der Schweigepflicht befreien, damit ERGO die Krankenakte und die Behandlungsunterlagen anfordern kann. Daraus ist zu sehen, wann ein Zahn verloren ging oder wann eine Behandlung angeraten wurde. ERGO kann dich außerdem von einem beauftragten Zahnarzt untersuchen lassen. Deshalb: beim Antrag ehrlich antworten."],
+    ["Wie reiche ich eine Rechnung ein?","Ganz einfach: Du machst ein Foto von der Zahnarztrechnung und schickst es mir per WhatsApp. Dazu die IBAN, auf die das Geld zurückkommen soll. Den Rest mache ich."],
+    ["Kann ich mich auch im Ausland behandeln lassen, in einem EU-Land?","Ja. In der EU, im Europäischen Wirtschaftsraum und in der Schweiz bist du bei vorübergehenden Aufenthalten mitversichert – zum Beispiel beim Zahnarzt in Rumänien oder Ungarn, wenn du im Urlaub zu Hause bist. Erstattet wird höchstens so viel, wie dieselbe Behandlung in Deutschland gekostet hätte. Außerhalb der EU, des EWR und der Schweiz besteht kein Versicherungsschutz. Beim Tarif ZEK aufpassen: Zahlt die gesetzliche Kasse für die Auslandsbehandlung nichts, zahlt ZEK auch nichts."],
+    ["Steigt mein Beitrag mit dem Alter?","Ja, in den Dental-Tarifen. Der Beitrag richtet sich nach Altersgruppen; nach dem 21., 26., 31., 41. und 51. Geburtstag kommst du in die nächste Gruppe, und zwar ab dem Monat danach. Innerhalb einer Gruppe bleibt der Beitrag gleich – ein 32-Jähriger zahlt also bis 40 denselben Beitrag. Wenn der Beitrag steigt, hast du innerhalb von zwei Monaten ein Sonderkündigungsrecht. Der Tarif ZEK ist die Ausnahme: 37,60 € in jedem Alter, der Beitrag steigt nicht mit dem Alter."],
+    ["Kann ich kündigen?","Die Dental-Tarife (DS/DV) sind monatlich kündbar, ohne Mindestlaufzeit. Beim Tarif ZEK beträgt die Mindestvertragsdauer 24 Monate; danach ist er ebenfalls zum Ende jedes Monats kündbar."]
+  ],
+  chatSub:"Antwortet meist in wenigen Minuten",
+  chatHello:"Hallo! 👋 Ich bin Tamas. Such dir unten eine Frage aus – oder schreib mir direkt auf WhatsApp.",
+  chatEnd:"Das war alles, was ich hier vorbereitet habe. Für alles andere schreib mir auf WhatsApp, da antworte ich persönlich.",
+  chatWa:"Tamas auf WhatsApp schreiben",
+  chatPh:"Schreib deine Frage…",
+  chatFoot:"Automatische Antworten, unverbindlich. Verbindlich sind die ERGO Bedingungen und das persönliche Angebot von Tamas.",
+  chatOff:"Gerade kann ich nicht frei antworten. Wähl unten eine Frage aus oder schreib mir direkt auf WhatsApp.",
+  stickyCta:"Antrag starten · 2 Minuten",
+  fImp:"Impressum", fDsg:"Datenschutz", fErst:"Erstinformation",
+  fFoot:"Versicherung mit Tamas · ERGO Vermittler",
+  fCross:"Außerdem: Kfz-Versicherung · Rechtsschutzversicherung",
+  fDisc:"Dies ist keine offizielle Seite der ERGO, sondern die Seite eines selbstständigen Versicherungsvermittlers. Prozentangaben beziehen sich auf die erstattungsfähigen Aufwendungen, nicht auf den Rechnungsbetrag. Die Angaben sind eine Zusammenfassung; verbindlich sind ausschließlich die ERGO Vertragsbedingungen (Tarife DS75, DS90, DS100, DVB, DVE). Die Berechnung auf dieser Seite ist ein Orientierungswert und kein Angebot.",
+  waText:"Hallo Tamas! Ich möchte ein Angebot für die ERGO Zahnzusatzversicherung."
+}
+};
+
+var lang = "ro", tarif = "Individual", chosenPlan = "PREMIUM";
+var MAXP   = 6;                   /* max. Familienmitglieder */
+var people = [{role:"Ich", bd:""}]; /* Index 0 = Hauptperson */
+
+function roleLabel(r){ return T[lang].roles[r] || r; }
+
+/* gültige Geburtsdaten mit Alter */
+function validPeople(){
+  var out = [];
+  people.forEach(function(p, i){
+    if (!p.bd) return;
+    var d = new Date(p.bd + "T00:00:00");
+    if (isNaN(d)) return;
+    var a = ageAtStart(d);
+    if (a < 0 || a > 110) return;
+    out.push({ i:i, role:p.role, iso:p.bd, year:d.getFullYear(), age:a });
+  });
+  return out;
+}
+/* im Einzeltarif zählt nur die erste Person */
+function activePeople(){
+  var v = validPeople();
+  return tarif === "Individual" ? v.slice(0,1) : v;
+}
+/* Gesamtbeitrag + Aufschlüsselung je Person */
+function calcTotal(plan){
+  var ps = activePeople();
+  if (!ps.length) { var c = calc(plan, EXAMPLE_AGE); return {full:c.full, start:c.start, parts:[]}; }
+  var full = 0, start = 0, parts = [];
+  ps.forEach(function(p){
+    var c = calc(plan, p.age);
+    full += c.full; start += c.start;
+    parts.push({ role:p.role, year:p.year, age:p.age, price:c.full });
+  });
+  return { full:full, start:start, parts:parts };
+}
+
+function fill(s, map){
+  return String(s).replace(/\{(\w+)\}/g, function(m,k){ return map[k] !== undefined ? map[k] : m; });
+}
+function waLink(){ return "https://wa.me/"+WA+"?text="+encodeURIComponent(T[lang].waText); }
+function waLinkFor(plan){
+  return "https://wa.me/"+WA+"?text="+encodeURIComponent(fill(T[lang].waIntTxt, {plan:pn(plan)}));
+}
+function beginStr(){
+  try { return beginDate().toLocaleDateString(T[lang].loc, {day:"2-digit",month:"2-digit",year:"numeric"}); }
+  catch(e){ return iso(beginDate()); }
+}
+
+/* Dental ZEK: fester Beitrag je Person, bei Familie also Summe plus Aufschlüsselung */
+function renderSofPrice(){
+  var t = T[lang], ps = activePeople(), multi = (ps.length > 1);
+  var c = calcTotal("Sofortschutz");
+  el("sofPrice").innerHTML = '<b>'+eur(c.full)+'</b><span>'
+    + (multi ? t.sofPerFam : t.sofPer) + '</span>';
+  el("sofBreak").innerHTML = multi
+    ? '<div class="breakdown">' + c.parts.map(function(x){
+        return '<span>'+roleLabel(x.role)+' <b>'+eur(x.price)+' €</b></span>';
+      }).join(" · ") + '</div>'
+    : "";
+}
+
+function renderPlans(){
+  var t = T[lang], out = "", ps = activePeople(), multi = (ps.length > 1);
+  renderSofPrice();
+  PLANS.forEach(function(p){
+    var best = (p === "PREMIUM"), c = calcTotal(p), bd = "";
+    if (multi) {
+      bd = '<div class="breakdown">' + c.parts.map(function(x){
+        return '<span>'+roleLabel(x.role)+' ('+x.age+' '+t.yAbbr+') <b>'+eur(x.price)+' €</b></span>';
+      }).join(" · ") + '</div>';
+    }
+    var save = c.full - c.start;
+    out += '<div class="plan'+(best?" best":"")+'">'
+        +  (best?'<span class="ribbon">'+t.ribbon+'</span>':'')
+        +  '<div class="plan-top"><div>'
+        +    '<p class="plan-name">'+pn(p)+'</p>'
+        +    '<p class="plan-tarif">'+t.planSubs[p]+'</p>'
+        +  '</div><div class="price">'
+        +    (save > 0 ? '<span class="was">'+fill(t.priceWas,{x:eur(c.full)})+'</span>' : '')
+        +    '<b>'+eur(save > 0 ? c.start : c.full)+'</b>'
+        +    '<span>'+(save > 0
+                 ? (multi ? t.priceFirst6Fam : t.priceFirst6)
+                 : (multi ? t.perMonthFam    : t.perMonth))+'</span>'
+        +  '</div></div>'
+        +  (save > 0 ? '<div class="dealbox">'
+             +  '<div class="deal">'+fill(t.dealStrip,{save:eur(save*6)})+'</div>'
+             +  '<div class="after">'+fill(t.dealAfter,{full:eur(c.full)})+'</div>'
+             +  '</div>' : '')
+        +  bd
+        +  '<ul><li>'+t.planF[p].join("</li><li>")+'</li></ul>'
+        +  '<div class="cta2">'
+        +    '<button class="btn" data-plan="'+p+'">'+t.planCta+'</button>'
+        +    '<button class="btn btn--ghost" data-more="'+p+'">'+t.planMore+'</button>'
+        +  '</div>'
+        +  planInfo(p)
+        +  '</div>';
+  });
+  document.getElementById("planList").innerHTML = out;
+
+  var st = document.getElementById("calcState"), exact = ps.length > 0;
+  st.classList.toggle("is-example", !exact);
+  st.innerHTML = !exact ? fill(t.calcEx, {age:EXAMPLE_AGE})
+    : (multi ? fill(t.calcYouFam, {n:ps.length, date:beginStr()})
+             : fill(t.calcYou,    {age:ps[0].age, date:beginStr()}));
+}
+
+function renderPeople(){
+  var t = T[lang], fam = (tarif === "Familie"), out = "";
+  var list = fam ? people : people.slice(0,1);
+  list.forEach(function(pp, i){
+    if (!fam) {
+      out += '<div class="person"><input type="date" data-i="'+i+'" value="'+(pp.bd||"")
+          +  '" min="1920-01-01" max="'+MAXBD+'"></div>';
+      return;
+    }
+    var del = (i > 0)
+      ? '<button type="button" class="delp" data-del="'+i+'" aria-label="'+t.famRemove+'">×</button>' : '';
+
+    if (!pp.role) {                         /* Schritt 1: Wer ist das? */
+      out += '<div class="person fam pick">'
+          +    '<div class="prow"><span class="pq">'+t.whoQ+'</span>'+del+'</div>'
+          +    '<div class="chips">' + ROLES.map(function(r){
+                 return '<button type="button" class="chip" data-pick="'+i+'" data-role="'+r+'">'+t.roles[r]+'</button>';
+               }).join("") + '</div>'
+          + '</div>';
+      return;
+    }
+    /* Schritt 2: Rolle steht, jetzt das Geburtsdatum */
+    var ctrl = (i === 0)
+      ? '<span class="prole fixed">'+t.roles.Ich+'</span>'
+      : '<button type="button" class="prole" data-change="'+i+'">'+t.roles[pp.role]+'</button>';
+    out += '<div class="person fam">'
+        +    '<div class="prow">'+ctrl+del+'</div>'
+        +    '<input type="date" data-i="'+i+'" value="'+(pp.bd||"")+'" min="1920-01-01" max="'+MAXBD+'">'
+        + '</div>';
+  });
+  document.getElementById("people").innerHTML = out;
+  var lab = document.querySelector('.calc label[data-t="bdL"]');
+  if (lab) lab.textContent = fam ? t.bdLFam : t.bdL;
+  var add = document.getElementById("addPerson");
+  add.style.display = fam ? "block" : "none";
+  add.textContent = t.famAdd;
+  add.disabled = people.length >= MAXP;
+}
+
+/* Beispielrechnung: was bleibt beim Kunden hängen?
+   Die Tarife leisten X % der erstattungsfähigen Aufwendungen EINSCHLIESSLICH
+   GKV-Vorleistung; die Staffel deckelt zusätzlich die Leistung des Versicherers. */
+var PCT = { START:75, PLUS:90, PREMIUM:100 };
+var CASES = [
+  { key:"exA", bill:1200, gkv:300, year:1 },
+  { key:"exB", bill:2800, gkv:500, year:3 }
+];
+function exCalc(plan, bill, gkv, year){
+  var want = Math.max(0, Math.round(bill * PCT[plan] / 100) - gkv);
+  var cap  = STAFFEL[plan][year-1];
+  var pay  = Math.min(want, cap);
+  return { want:want, cap:cap, pay:pay, own:bill - gkv - pay, capped: want > cap };
+}
+function exRow(label, value, cls){
+  return '<div class="exrow'+(cls ? " "+cls : "")+'"><span>'+label+'</span><b>'+value+'</b></div>';
+}
+
+/* Frag-Feld: führt in den KI-Chat, WhatsApp bleibt als leiser Weg darunter */
+/* WhatsApp-Glyphe */
+var WAICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
+  + '<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.2'
+  + '-.5 0-.9.2-3-.8-2.6-1.2-4.2-3.9-4.3-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0'
+  + ' .4 0 .6.5l.8 2c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.8 1.1 2.1 1.3'
+  + '.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3v.2z"/></svg>';
+
+function askBox(plan){
+  var t = T[lang];
+  return '<div class="askbox">'
+    +  '<div class="askcard">'
+    +    '<div class="askcard__h"><span class="bub">💬</span><b>'+t.askTag+'</b>'
+    +      '<span class="live">'+t.askLive+'</span></div>'
+    +    '<div class="askcard__b">'
+    +      '<div class="askpv"><span class="ph">'+phImg()+'</span>'
+    +        '<div class="bubble">'+fill(t.askBubble, {plan:pn(plan)})+'</div></div>'
+    +      '<div class="askrow">'
+    +        '<input type="text" class="askin" data-askplan="'+plan+'" autocomplete="off" '
+    +          'enterkeyhint="send" placeholder="'+t.askPh+'">'
+    +        '<button type="button" class="asksend" data-asksend="'+plan+'" aria-label="senden">➤</button>'
+    +      '</div>'
+    +    '</div>'
+    +  '</div>'
+    +  '<a class="askwl" href="'+waLinkFor(plan)+'" target="_blank" rel="noopener">'
+    +    WAICON+t.askWa+'</a>'
+    +  '</div>';
+}
+
+/* aufklappbarer Infoblock INNERHALB eines Paketes */
+function planInfo(plan){
+  var t = T[lang], o = "";
+  o += '<h4>'+t.piWaitT+'</h4><p>'+t.piWaitS+'</p>';
+  o += '<h4>'+t.piMissT+'</h4><p>'+t.piMissS+'</p>';
+  o += '<h4>'+t.piStaffelT+'</h4><p>'+t.piStaffelS+'</p>';
+  o += '<table><thead><tr><th>'+t.piYear+'</th><th>'+t.piMax+'</th></tr></thead><tbody>';
+  t.infoRows.forEach(function(lbl, i){
+    o += '<tr><td>'+lbl+'</td><td>'+gro(STAFFEL[plan][i])+' €</td></tr>';
+  });
+  o += '</tbody></table><p class="unl">'+t.infoUnl+'</p>';
+
+  CASES.forEach(function(c){
+    var e = exCalc(plan, c.bill, c.gkv, c.year);
+    o += '<div class="ex"><b>'+t[c.key]+'</b>'
+      +  exRow(t.exBill, gro(c.bill)+" €")
+      +  exRow(t.exGkv, "- "+gro(c.gkv)+" €")
+      +  exRow(fill(t.exPlan,{plan:pn(plan), pct:PCT[plan]}), "- "+gro(e.pay)+" €")
+      +  exRow(t.exOwn, gro(e.own)+" €", "tot")
+      +  (e.capped
+            ? '<p class="exnote">'+fill(t.exCap,{cap:gro(e.cap), want:gro(e.want), yl:t.infoRows[c.year-1]})+' '
+              + fill(t.exNoCap,{plan:pn(plan), want:gro(e.want), own:gro(c.bill - c.gkv - e.want)})+'</p>'
+            : "")
+      +  '</div>';
+  });
+  o += askBox(plan);
+  return '<details class="info plan-info" data-info="'+plan+'"><summary>'+t.piT+'</summary><div>'+o+'</div></details>';
+}
+
+function renderCond(){
+  var out = "";
+  (T[lang].sofCond || []).forEach(function(c){
+    out += '<li'+(c[1] ? ' class="no"' : '')+'>'+c[0]+'</li>';
+  });
+  document.getElementById("sofCond").innerHTML = out;
+  document.getElementById("zekAsk").innerHTML = askBox("ZEK");
+}
+
+function renderFaq(){
+  var out = "";
+  T[lang].faq.forEach(function(q){
+    out += "<details><summary>"+q[0]+"</summary><p>"+q[1]+"</p></details>";
+  });
+  document.getElementById("faq").innerHTML = out;
+}
+
+function render(){
+  var t = T[lang];
+  document.documentElement.lang = t.htmlLang;
+  document.title = t.title;
+  document.getElementById("brand1").textContent = t.brand1;
+  document.getElementById("brand2").textContent = t.brand2;
+  document.getElementById("brand").querySelector("svg").setAttribute("aria-label", t.brand1 + " " + t.brand2);
+  document.getElementById("claim").textContent = t.claim;
+  document.getElementById("sofName").textContent = pn("ZEK");
+  document.getElementById("metaDesc").setAttribute("content", t.metaDesc);
+  document.getElementById("ogTitle").setAttribute("content", t.title);
+  document.getElementById("ogDesc").setAttribute("content", t.metaDesc);
+  document.querySelector('meta[property="og:locale"]').setAttribute("content", t.ogLocale);
+  document.getElementById("fLang").value = lang;
+
+  document.querySelectorAll("[data-t]").forEach(function(el){
+    var v = t[el.getAttribute("data-t")];
+    if (v !== undefined) el.innerHTML = v;
+  });
+  // Select-Optionen: nur das Label übersetzen, der value bleibt
+  document.querySelectorAll("option[data-t]").forEach(function(o){
+    var v = t[o.getAttribute("data-t")];
+    if (v !== undefined) o.textContent = v;
+  });
+
+  document.querySelectorAll(".lang").forEach(function(b){
+    b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+  });
+  document.getElementById("waBtn").href = waLink();
+  document.getElementById("okWa").href = waLinkFor(chosenPlan);
+  renderPeople(); renderPlans(); renderFaq(); renderCond(); renderQuote(); syncHidden();
+  if (typeof chatReset === "function") chatReset();
+}
+
+function setLang(l){
+  if (!T[l]) l = "ro";
+  lang = l;
+  try { localStorage.setItem("tamas_lang", l); } catch(e){}
+  render();
+}
+
+/* Startsprache: /ro /hu /de → ?lang= → localStorage → Browser → ro
+   window.__lang setzt die Pages-Funktion functions/_middleware.js */
+(function(){
+  var fixed = (typeof window.__lang === "string") ? window.__lang : null;
+  var q = new URLSearchParams(location.search).get("lang");
+  var s = null; try { s = localStorage.getItem("tamas_lang"); } catch(e){}
+  var b = (navigator.language || "ro").slice(0,2).toLowerCase();
+  setLang(fixed || q || s || (T[b] ? b : "ro"));
+})();
+
+document.querySelectorAll(".lang").forEach(function(b){
+  b.addEventListener("click", function(){ setLang(b.getAttribute("data-lang")); });
+});
+
+/* ---------- Geburtsdaten → Beitrag ---------- */
+var bd2 = document.getElementById("bd2");
+bd2.max = MAXBD;
+
+function update(){ renderPlans(); renderQuote(); syncHidden(); }
+
+function setPerson(i, v){
+  people[i].bd = v || "";
+  if (i === 0 && bd2.value !== people[0].bd) bd2.value = people[0].bd;
+  update();
+}
+
+document.getElementById("people").addEventListener("change", function(e){
+  var inp = e.target.closest("input[data-i]");
+  if (inp) setPerson(parseInt(inp.getAttribute("data-i"), 10), inp.value);
+});
+document.getElementById("people").addEventListener("click", function(e){
+  var pick = e.target.closest("button[data-pick]");
+  if (pick) {
+    var i = parseInt(pick.getAttribute("data-pick"), 10);
+    people[i].role = pick.getAttribute("data-role");
+    renderPeople(); update();
+    var f = document.querySelector('#people input[data-i="'+i+'"]');
+    if (f) { f.focus(); if (f.showPicker) { try { f.showPicker(); } catch(err){} } }
+    return;
+  }
+  var chg = e.target.closest("button[data-change]");
+  if (chg) { people[parseInt(chg.getAttribute("data-change"), 10)].role = null; renderPeople(); update(); return; }
+  var d = e.target.closest("button[data-del]");
+  if (d) { people.splice(parseInt(d.getAttribute("data-del"), 10), 1); renderPeople(); update(); }
+});
+document.getElementById("addPerson").addEventListener("click", function(){
+  if (people.length >= MAXP) return;
+  people.push({ role: null, bd: "" });
+  renderPeople(); update();
+  var inps = document.querySelectorAll("#people input[data-i]");
+  if (inps.length) inps[inps.length-1].focus();
+});
+bd2.addEventListener("change", function(){
+  people[0].bd = this.value || "";
+  var inp = document.querySelector('#people input[data-i="0"]');
+  if (inp) inp.value = people[0].bd;
+  update();
+});
+
+function isCalcPlan(p){ return PLANS.indexOf(p) !== -1 || p === "Sofortschutz"; }
+
+function syncHidden(){
+  var plan = isCalcPlan(chosenPlan) ? chosenPlan : "PREMIUM";
+  var ps = activePeople(), c = calcTotal(plan), ex = ps.length > 0;
+  document.getElementById("fAge").value      = ex ? ps.map(function(p){ return p.age; }).join(", ") : "";
+  document.getElementById("fBds").value      = ex ? ps.map(function(p){ return p.iso; }).join(", ") : "";
+  document.getElementById("fMembers").value  = ex ? ps.map(function(p){
+    var d = p.iso.split("-");
+    return p.role+" · "+d[2]+"."+d[1]+"."+d[0]+" · "+p.age+" J. · "+eur(calc(plan, p.age).full)+" €";
+  }).join("  |  ") : "";
+  document.getElementById("fBeitrag").value  = ex ? eur(c.full) + " €" : "";
+  document.getElementById("fStart").value    = ex ? eur(c.start) + " €" : "";
+  document.getElementById("fBeginn").value   = iso(beginDate());
+  document.getElementById("planSel").value   = pn(chosenPlan);
+  var sel = document.querySelector("[name=persons]");
+  if (sel && tarif === "Familie") {
+    var n = Math.max(1, ps.length || people.length);
+    sel.value = n >= 5 ? "5+" : String(n);
+  }
+}
+
+function renderQuote(){
+  if (typeof renderPriceBar === "function") renderPriceBar();
+}
+
+/* Tarif-Umschalter */
+document.getElementById("tarifToggle").addEventListener("click", function(e){
+  var b = e.target.closest("button[data-tarif]"); if (!b) return;
+  tarif = b.getAttribute("data-tarif");
+  document.getElementById("fTarif").value = tarif;
+  this.querySelectorAll("button").forEach(function(x){
+    x.setAttribute("aria-pressed", x === b ? "true" : "false");
+  });
+  if (tarif === "Familie" && people.length < 2) people.push({role:null, bd:""});
+  renderPeople(); update();
+});
+
+/* =========================================================
+   Antragsstrecke: 5 Schritte
+   ========================================================= */
+var intro   = document.getElementById("intro");
+var form    = document.getElementById("form");
+var success = document.getElementById("success");
+var STEPS = 5, step = 1;
+
+function tr(k){ return T[lang][k] || ""; }
+function el(id){ return document.getElementById(id); }
+function val(n){ var f = form.elements[n]; return f ? String(f.value || "").trim() : ""; }
+
+/* Pills (Anrede, Ja/Nein, Bedarf) */
+document.querySelectorAll(".pills[data-pick]").forEach(function(g){
+  var name = g.getAttribute("data-pick");
+  g.addEventListener("click", function(e){
+    var b = e.target.closest("button[data-val]"); if (!b) return;
+    g.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    form.elements[name].value = b.getAttribute("data-val");
+    if (name === "gkv") el("gkvWarn").classList.toggle("on", b.getAttribute("data-val") === "nein");
+    if (name === "missing") toggleNotes();
+    if (name === "zek_plan") renderZekQ();
+    if (name === "zek_when") renderZekQ();
+    if (name === "kanal") renderKanal();
+  });
+});
+function pillInit(){
+  document.querySelectorAll('.pills[data-pick="anrede"] button').forEach(function(b){
+    b.setAttribute("aria-pressed", b.getAttribute("data-val") === "Herr" ? "true" : "false");
+  });
+}
+
+/* Kanal: WhatsApp, E-Mail oder beides */
+function mailNeeded(){ var k = val("kanal"); return k === "E-Mail" || k === "Beides"; }
+function renderKanal(){
+  var k = val("kanal"), need = mailNeeded();
+  el("waNote").classList.toggle("on", k === "WhatsApp" || k === "Beides");
+  el("mailLab").textContent  = need ? tr("fMailReq") : tr("fMailOpt");
+  el("mailHint").textContent = need ? tr("fMailHReq") : tr("fMailHOpt");
+}
+
+/* ZEK-Kasten im Antrag: zeigen, was der Sofortschutz abdeckt, und wechseln lassen */
+function renderZek(){
+  var t = T[lang], on = (chosenPlan === "Sofortschutz");
+  var o = '<div class="top"><h4>'+pn("ZEK")+'<span>'+t.sofTag+'</span></h4>'
+        + '<div class="pr"><b>'+eur(ZEK)+' €</b><span>'+t.sofPer+'</span></div></div>'
+        + '<ul><li>'+[t.sof1, t.sof2, t.sof3, t.sof4].join("</li><li>")+'</li></ul>'
+        + (on
+            ? '<div class="chosen">'+t.zekOn+'</div>'
+            : '<button type="button" class="btn" id="zekSwitch">'+t.zekSwitch+'</button>')
+        + '<small>'+t.sofNote+'</small>'
+        + askBox("ZEK");
+  el("zekBox").innerHTML = o;
+}
+document.addEventListener("click", function(e){
+  if (e.target.closest("button[data-zek]")) {
+    var box = el("zekBox");
+    renderZek();
+    box.classList.toggle("on");
+    if (box.classList.contains("on")) box.scrollIntoView({behavior:"smooth", block:"center"});
+    return;
+  }
+  if (e.target.id === "zekSwitch") {
+    chosenPlan = "Sofortschutz";
+    el("planSel").value = chosenPlan;
+    renderZek(); renderPriceBar(); syncHidden();
+  }
+});
+
+/* Hinweis bei schon fehlenden Zähnen */
+function toggleNotes(){
+  el("missNote").classList.toggle("on", val("missing") === "ja");
+}
+
+/* Namensfelder je Familienmitglied */
+function renderFamNames(){
+  var box = el("famNames"), ps = activePeople();
+  if (tarif !== "Familie" || ps.length < 2) { box.innerHTML = ""; return; }
+  var out = "";
+  ps.forEach(function(p, i){
+    if (i === 0) return;
+    out += '<div class="row row2">'
+        +  '<div><label>'+roleLabel(p.role)+' · '+tr("fVorname")+'</label>'
+        +    '<input type="text" name="p'+i+'_vorname"></div>'
+        +  '<div><label>'+tr("fNachname")+'</label>'
+        +    '<input type="text" name="p'+i+'_nachname"></div></div>';
+  });
+  box.innerHTML = out;
+}
+
+/* Preisleiste */
+function renderPriceBar(){
+  var c = calcTotal(isCalcPlan(chosenPlan) ? chosenPlan : "PREMIUM"), ps = activePeople();
+  el("pbLeft").innerHTML = pn(chosenPlan) + (ps.length > 1 ? " · " + ps.length + " " + tr("pbPers") : "");
+  el("pbRight").innerHTML = eur(c.start) + " €"
+    + (c.full !== c.start ? "<small>" + fill(tr("pbAfter"), {x: eur(c.full)}) + "</small>"
+                          : "<small>" + tr("pbMonth") + "</small>");
+}
+
+/* Schritt anzeigen */
+/* Dental ZEK hat eine eigene dritte Seite: dort entscheidet nicht die Zahnlücke,
+   sondern ob schon ein Heil- und Kostenplan existiert und wie alt er ist. */
+function isZek(){ return chosenPlan === "Sofortschutz"; }
+function renderZekQ(){
+  var zek = isZek();
+  el("qDs").style.display  = zek ? "none" : "";
+  el("qZek").style.display = zek ? "" : "none";
+  el("w3Head").textContent = tr(zek ? "w3Hz" : "w3H");
+  if (!zek) return;
+  var pl = val("zek_plan"), wh = val("zek_when");
+  el("zekNoPlanNote").classList.toggle("on", pl === "nein");
+  el("zekWhenRow").style.display = (pl === "ja") ? "" : "none";
+  el("zek6Ok").classList.toggle("on", pl === "ja" && wh === "unter6");
+  el("zek6No").classList.toggle("on", pl === "ja" && wh === "ueber6");
+  el("zek6Wa").href = waLinkFor("ZEK");
+}
+
+function showStep(n){
+  step = n;
+  if (n === 3) renderZekQ();
+  form.querySelectorAll(".wstep").forEach(function(w){
+    w.style.display = (w.getAttribute("data-step") === String(n)) ? "" : "none";
+  });
+  el("progFill").style.width = Math.round(n / STEPS * 100) + "%";
+  el("progTxt").textContent = fill(tr("wStep"), {n: n, t: STEPS});
+  el("nextBtn").textContent = (n === STEPS) ? tr("wSubmit") : tr("wNext" + n);
+  el("stepNote").textContent = (n === STEPS) ? tr("ctaNote2") : "";
+  el("err").classList.remove("on");
+  if (n === STEPS) buildSummary();
+  el("card").scrollIntoView({behavior:"smooth", block:"start"});
+  if (window.fbq) fbq("trackCustom", "zahnzusatz_step", {step:n, lang:lang, plan:chosenPlan});
+}
+
+/* Antrag starten */
+function openAntrag(plan){
+  if (plan) chosenPlan = plan;
+  if (document.getElementById("qZek")) renderZekQ();
+  el("planSel").value = chosenPlan;
+  syncHidden();
+  var p0 = people[0] && people[0].bd;
+  if (p0) el("bd2").value = p0;
+  el("beginnIn").value = iso(beginDate());
+  renderFamNames(); pillInit(); renderKanal(); renderPriceBar();
+  intro.style.display = "none"; success.classList.remove("on"); form.style.display = "block";
+  el("priceBar").classList.add("on");
+  showStep(1);
+  if (window.fbq) fbq("trackCustom", "zahnzusatz_antrag_start", {lang:lang, plan:chosenPlan});
+}
+el("startBtn").addEventListener("click", function(){ openAntrag(null); });
+
+/* Rückruf für ein individuelles Angebot */
+var cbForm = el("cbForm");
+el("cbBtn").addEventListener("click", function(){
+  var c = calcTotal(isCalcPlan(chosenPlan) ? chosenPlan : "PREMIUM"), ps = activePeople();
+  el("cbLang").value = lang;
+  el("cbPlan").value = pn(chosenPlan);
+  el("cbBeitrag").value = ps.length ? eur(c.full) + " €" : "";
+  el("cbAge").value = ps.map(function(x){ return x.age; }).join(", ");
+  intro.style.display = "none"; success.classList.remove("on"); cbForm.style.display = "block";
+  el("card").scrollIntoView({behavior:"smooth", block:"start"});
+  cbForm.querySelector("[name=name]").focus({preventScroll:true});
+  if (window.fbq) fbq("trackCustom", "zahnzusatz_rueckruf_open", {lang:lang});
+});
+el("cbBack").addEventListener("click", function(){
+  cbForm.style.display = "none"; intro.style.display = "block";
+});
+el("cbSend").addEventListener("click", function(){
+  var e = [], box = el("cbErr");
+  var n = cbForm.elements.name.value.trim(), ph = cbForm.elements.phone.value.trim();
+  if (!n) e.push(tr("eCbName"));
+  if (ph.replace(/\D/g, "").length < 6) e.push(tr("ePhone"));
+  if (!cbForm.elements.consent.checked) e.push(tr("eConsent"));
+  if (e.length) { box.innerHTML = e.join("<br>"); box.classList.add("on"); return; }
+  box.classList.remove("on");
+  var btn = el("cbSend");
+  btn.disabled = true; btn.style.opacity = ".6";
+  fetch("/api/lead", { method:"POST", body: new FormData(cbForm) })
+    .then(function(r){ if (!r.ok) throw new Error("http " + r.status); return r.text(); })
+    .then(function(){
+      cbForm.style.display = "none"; success.classList.add("on");
+      el("card").scrollIntoView({behavior:"smooth", block:"start"});
+      if (window.fbq) fbq("trackCustom", "zahnzusatz_rueckruf", {lang:lang});
+    })
+    .catch(function(){ box.innerHTML = tr("errSend"); box.classList.add("on"); })
+    .finally(function(){ btn.disabled = false; btn.style.opacity = "1"; });
+});
+el("stickyBtn").addEventListener("click", function(){ openAntrag(null); });
+document.getElementById("planList").addEventListener("click", function(e){
+  var m = e.target.closest("button[data-more]");
+  if (m) {
+    var d = document.querySelector('.plan-info[data-info="' + m.getAttribute("data-more") + '"]');
+    if (d) { d.open = !d.open; if (d.open) d.scrollIntoView({behavior:"smooth", block:"nearest"}); }
+    return;
+  }
+  var b = e.target.closest("button[data-plan]");
+  if (b) openAntrag(b.getAttribute("data-plan"));
+});
+el("sofBtn").addEventListener("click", function(){ openAntrag("Sofortschutz"); });
+el("sofMore").addEventListener("click", function(){
+  var d = el("sofInfo");
+  d.open = !d.open;
+  if (d.open) d.scrollIntoView({behavior:"smooth", block:"nearest"});
+});
+
+/* Geburtsdatum im Antrag wirkt auf den Rechner zurück */
+el("bd2").addEventListener("change", function(){
+  people[0].bd = this.value || "";
+  var inp = document.querySelector('#people input[data-i="0"]');
+  if (inp) inp.value = people[0].bd;
+  update(); renderFamNames(); renderPriceBar();
+});
+
+/* IBAN formatieren */
+var ibanIn = el("ibanIn");
+ibanIn.addEventListener("input", function(){
+  var v = this.value.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 34);
+  this.value = v.replace(/(.{4})/g, "$1 ").trim();
+});
+function ibanOk(v){
+  var s = String(v).toUpperCase().replace(/[^A-Z0-9]/g, "");
+  if (s.length < 15 || s.length > 34) return false;
+  var r = s.slice(4) + s.slice(0, 4), n = "";
+  for (var i = 0; i < r.length; i++) {
+    var c = r.charCodeAt(i);
+    n += (c >= 65 && c <= 90) ? (c - 55) : r[i];
+  }
+  var rem = 0;
+  for (var j = 0; j < n.length; j++) rem = (rem * 10 + parseInt(n[j], 10)) % 97;
+  return rem === 1;
+}
+
+/* Zusammenfassung */
+function srow(label, value, toStep){
+  return '<div class="srow"><span>'+label+'</span><b>'+value+'</b>'
+       + (toStep ? '<button type="button" class="edit" data-goto="'+toStep+'">'+tr("sumChange")+'</button>' : '')
+       + '</div>';
+}
+function buildSummary(){
+  var ps = activePeople(), t = T[lang], o = "";
+  o += srow(tr("sumName"), val("anrede") + " " + val("vorname") + " " + val("nachname"), 1);
+  o += srow(tr("fBd"), deStr(val("birthdate")), 1);
+  ps.slice(1).forEach(function(p, i){
+    var n = (val("p"+(i+1)+"_vorname") + " " + val("p"+(i+1)+"_nachname")).trim();
+    o += srow(roleLabel(p.role), (n ? n + " · " : "") + deStr(p.iso), 1);
+  });
+  o += srow(tr("fPhone"), val("phone"), 2);
+  o += srow(tr("sumKanal"), val("kanal"), 2);
+  if (val("email")) o += srow(tr("fMailOpt"), val("email"), 2);
+  o += srow(tr("sumAddr"), val("strasse") + ", " + val("plz") + " " + val("ort"), 2);
+  o += srow(tr("fPlan"), pn(chosenPlan), 1);
+  if (isZek()) {
+    o += srow(tr("sumZekPlan"), val("zek_plan") === "ja"
+          ? tr(val("zek_when") === "ueber6" ? "zek6o" : "zek6u")
+          : tr("no"), 3);
+  } else {
+    o += srow(tr("fMiss2"), val("missing") === "ja" ? tr("yes") : tr("no"), 3);
+  }
+  o += srow(tr("fZw"), form.elements.zahlweise.options[form.elements.zahlweise.selectedIndex].textContent, 4);
+  o += srow(tr("fIban"), val("iban"), 4);
+  el("sumBox").innerHTML = o;
+
+  var c = calcTotal(isCalcPlan(chosenPlan) ? chosenPlan : "PREMIUM");
+  var pb = '<div class="l"><span>'+tr("pbFirst")+'</span><b>'+eur(c.start)+' €</b></div>';
+  if (c.full !== c.start) pb += '<div class="l"><span>'+tr("pbLater")+'</span><b>'+eur(c.full)+' €</b></div>';
+  pb += '<div class="l"><span>'+tr("fBeginn")+'</span><b>'+deStr(val("beginn_wunsch"))+'</b></div>';
+  el("priceBox").innerHTML = pb;
+
+  var d = "";
+  (t.docs || []).forEach(function(x){ d += '<li><a href="'+x[1]+'" target="_blank" rel="noopener">'+x[0]+'</a></li>'; });
+  el("docsList").innerHTML = d;
+}
+function deStr(isoStr){
+  if (!isoStr) return "–";
+  var a = isoStr.split("-"); return a.length === 3 ? a[2]+"."+a[1]+"."+a[0] : isoStr;
+}
+el("sumBox").addEventListener("click", function(e){
+  var b = e.target.closest("button[data-goto]"); if (!b) return;
+  showStep(parseInt(b.getAttribute("data-goto"), 10));
+});
+
+/* Prüfung je Schritt */
+function check(n){
+  var e = [];
+  if (n === 1) {
+    if (!val("vorname") || !val("nachname")) e.push(tr("eName"));
+    if (!val("birthdate")) e.push(tr("eBd"));
+    if (!val("beginn_wunsch")) e.push(tr("eBeginn"));
+  }
+  if (n === 2) {
+    if (val("phone").replace(/\D/g, "").length < 6) e.push(tr("ePhone"));
+    if (!val("kanal")) e.push(tr("eKanal"));
+    var mail = val("email"), mailOk = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail);
+    if (mailNeeded() && !mailOk) e.push(tr("eMail"));
+    if (!mailNeeded() && mail && !mailOk) e.push(tr("eMailBad"));
+    if (!/^\d{5}$/.test(val("plz"))) e.push(tr("ePlz"));
+    if (!val("ort") || !val("strasse")) e.push(tr("eAddr"));
+  }
+  if (n === 3) {
+    if (!val("gkv")) e.push(tr("eGkv"));
+    if (val("gkv") === "nein") e.push(tr("eGkvNo"));
+    if (isZek()) {
+      if (!val("zek_plan")) e.push(tr("eZekPlan"));
+      if (val("zek_plan") === "ja" && !val("zek_when")) e.push(tr("eZekWhen"));
+    } else {
+      if (!val("missing")) e.push(tr("eMiss"));
+    }
+  }
+  if (n === 4) {
+    if (!val("kontoinhaber")) e.push(tr("eHolder"));
+    if (!ibanOk(val("iban"))) e.push(tr("eIban"));
+  }
+  if (n === 5) {
+    if (!form.elements.docs_ok.checked) e.push(tr("eDocs"));
+    if (!form.elements.consent.checked) e.push(tr("eConsent"));
+  }
+  return e;
+}
+function fail(list){
+  var box = el("err");
+  box.innerHTML = list.join("<br>");
+  box.classList.add("on");
+  box.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+el("nextBtn").addEventListener("click", function(){
+  var e = check(step);
+  if (e.length) { fail(e); return; }
+  el("err").classList.remove("on");
+  if (step < STEPS) {
+    if (step === 1) { form.elements.kontoinhaber.value = (val("vorname")+" "+val("nachname")).trim(); }
+    showStep(step + 1);
+    return;
+  }
+  send();
+});
+
+el("backBtn").addEventListener("click", function(){
+  if (step > 1) { showStep(step - 1); return; }
+  form.style.display = "none"; intro.style.display = "block";
+  el("priceBar").classList.remove("on");
+});
+
+/* Absenden */
+function send(){
+  syncHidden();
+  var btn = el("nextBtn");
+  btn.disabled = true; btn.style.opacity = ".6";
+  fetch("/api/lead", { method:"POST", body: new FormData(form) })
+    .then(function(r){ if (!r.ok) throw new Error("http " + r.status); return r.text(); })
+    .then(function(){
+      form.style.display = "none"; success.classList.add("on");
+      el("priceBar").classList.remove("on");
+      el("card").scrollIntoView({behavior:"smooth", block:"start"});
+      if (window.fbq) fbq("trackCustom", "zahnzusatz_antrag", {lang:lang, plan:chosenPlan});
+    })
+    .catch(function(){ fail([tr("errSend")]); })
+    .finally(function(){ btn.disabled = false; btn.style.opacity = "1"; });
+}
+
+/* Sticky-CTA nur außerhalb des Antrags */
+window.addEventListener("scroll", function(){
+  var show = window.scrollY > 520 && form.style.display !== "block"
+             && cbForm.style.display !== "block" && !success.classList.contains("on");
+  document.getElementById("sticky").classList.toggle("on", show);
+}, {passive:true});
+
+/* =========================================================
+   Mini-Chat: beantwortet nur, was in der FAQ steht.
+   Keine KI, kein Server – alles aus dem Dictionary T.
+   ========================================================= */
+var chatWin = el("chatWin"), chatBtn = el("chatBtn"), asked = [];
+
+function chatMsg(who, html){
+  var d = document.createElement("div");
+  d.className = "msg " + who;
+  d.innerHTML = html;
+  el("chatBody").appendChild(d);
+  el("chatBody").scrollTop = el("chatBody").scrollHeight;
+}
+var chatHist = [];      /* Verlauf für die KI */
+var chatPlan = null;    /* Paket, aus dem der Chat geöffnet wurde */
+var aiDown = false;     /* true, sobald /api/chat nicht erreichbar ist */
+
+function chatChips(starters){
+  var t = T[lang], out = "";
+  if (starters) {
+    var shown = 0;
+    t.faq.forEach(function(q, i){
+      if (asked.indexOf(i) !== -1 || shown >= 5) return;
+      out += '<button type="button" data-q="'+i+'">'+q[0]+'</button>';
+      shown++;
+    });
+  }
+  var wl = chatPlan ? waLinkFor(chatPlan) : waLink();
+  out += '<a class="cwa" href="'+wl+'" target="_blank" rel="noopener">'+t.chatWa+'</a>';
+  el("chatChips").innerHTML = out;
+}
+
+function typingOn(){
+  var d = document.createElement("div");
+  d.className = "msg bot"; d.id = "typing";
+  d.innerHTML = '<span class="typing"><i></i><i></i><i></i></span>';
+  el("chatBody").appendChild(d);
+  el("chatBody").scrollTop = el("chatBody").scrollHeight;
+}
+function typingOff(){ var d = el("typing"); if (d) d.remove(); }
+
+function esc(x){
+  return String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+/* Frage an die KI; fällt bei Fehler auf die festen FAQ-Antworten zurück */
+function chatAsk(text){
+  var t = T[lang];
+  chatMsg("me", esc(text));
+  chatHist.push({ role:"user", content:text });
+  el("chatIn").value = "";
+  el("chatSend").disabled = true;
+  el("chatChips").innerHTML = "";
+  typingOn();
+
+  fetch("/api/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ lang: lang, plan: chatPlan, messages: chatHist })
+  })
+    .then(function(r){ if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+    .then(function(d){
+      if (!d.reply) throw new Error("empty");
+      typingOff();
+      chatMsg("bot", esc(d.reply).replace(/\n/g, "<br>"));
+      chatHist.push({ role:"assistant", content:d.reply });
+      chatChips(false);
+      if (window.fbq) fbq("trackCustom", "zahnzusatz_chat_ki", {lang:lang});
+    })
+    .catch(function(){
+      typingOff();
+      if (!aiDown) { aiDown = true; chatMsg("bot", t.chatOff); }
+      chatChips(true);
+    })
+    .finally(function(){ el("chatSend").disabled = false; });
+}
+function chatOpen(skipHello){
+  var t = T[lang];
+  el("chatIn").placeholder = t.chatPh;
+  if (!skipHello && !el("chatBody").childNodes.length) {
+    chatMsg("bot", t.chatHello);
+    chatChips(true);
+  }
+  chatWin.classList.add("on");
+  chatBtn.classList.add("hide");
+  var d = chatBtn.querySelector(".dot"); if (d) d.style.display = "none";
+  if (window.fbq) fbq("trackCustom", "zahnzusatz_chat_open", {lang:lang});
+}
+function chatReset(){
+  if (!chatWin) return;              /* beim ersten render() noch nicht gesetzt */
+  asked = []; chatHist = []; aiDown = false; chatPlan = null;
+  el("chatBody").innerHTML = "";
+  el("chatIn").placeholder = T[lang].chatPh;
+  if (chatWin.classList.contains("on")) { chatMsg("bot", T[lang].chatHello); chatChips(true); }
+}
+chatBtn.addEventListener("click", function(){ chatPlan = null; chatOpen(); });
+
+/* Frage aus einem Infokasten heraus: Chat auf, Frage direkt an die KI */
+function askFrom(plan, input){
+  var q = input ? input.value.trim() : "";
+  chatPlan = plan;
+  chatOpen(q.length > 1);
+  chatMsg("bot", fill(T[lang].chatHelloPlan, {plan: pn(plan)}));
+  chatChips(q.length > 1 ? false : true);
+  if (q.length > 1) { input.value = ""; chatAsk(q.slice(0, 600)); }
+  else { el("chatIn").focus(); }
+}
+document.addEventListener("click", function(e){
+  var b = e.target.closest("button[data-asksend]"); if (!b) return;
+  askFrom(b.getAttribute("data-asksend"), b.parentNode.querySelector("input.askin"));
+});
+document.addEventListener("keydown", function(e){
+  if (e.key !== "Enter") return;
+  var i = e.target.closest ? e.target.closest("input.askin") : null;
+  if (!i) return;
+  e.preventDefault();
+  askFrom(i.getAttribute("data-askplan"), i);
+});
+/* alter Weg: Button mit data-chat (falls noch irgendwo im Markup) */
+document.addEventListener("click", function(e){
+  var b = e.target.closest("button[data-chat]"); if (!b) return;
+  askFrom(b.getAttribute("data-chat"), null);
+});
+el("chatClose").addEventListener("click", function(){
+  chatWin.classList.remove("on"); chatBtn.classList.remove("hide");
+});
+el("chatChips").addEventListener("click", function(e){
+  var b = e.target.closest("button[data-q]"); if (!b) return;
+  var i = parseInt(b.getAttribute("data-q"), 10), t = T[lang];
+  if (aiDown) {                      /* KI nicht erreichbar → feste Antwort */
+    asked.push(i);
+    chatMsg("me", t.faq[i][0]);
+    el("chatChips").innerHTML = "";
+    setTimeout(function(){
+      chatMsg("bot", t.faq[i][1]);
+      if (asked.length >= t.faq.length) chatMsg("bot", t.chatEnd);
+      chatChips(true);
+    }, 400);
+    return;
+  }
+  asked.push(i);
+  chatAsk(t.faq[i][0]);              /* sonst stellt die Frage die KI */
+});
+
+el("chatSend").addEventListener("click", function(){
+  var v = el("chatIn").value.trim();
+  if (v.length > 1) chatAsk(v.slice(0, 600));
+});
+el("chatIn").addEventListener("keydown", function(e){
+  if (e.key === "Enter") { e.preventDefault(); el("chatSend").click(); }
+});
+
+/* Portraitfoto in alle runden Platzhalter setzen */
+Array.prototype.forEach.call(document.querySelectorAll("[data-photo]"), function(d){
+  d.innerHTML = phImg();
+});
+
+pillInit();
+syncHidden();
+</script>
+</body>
+</html>
