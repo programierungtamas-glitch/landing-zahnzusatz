@@ -57,7 +57,15 @@ img{max-width:100%;display:block}
 .hero{
   background:radial-gradient(120% 80% at 50% 0%,#24201a,#111);
   color:#fff;padding:26px 0 86px;text-align:center;
+  position:relative;overflow:hidden;
 }
+/* dezent gezeichneter goldener Zahn im Hintergrund */
+.toothbg{
+  position:absolute;left:50%;top:130px;width:142px;height:auto;
+  opacity:.24;pointer-events:none;z-index:0;transform:translateX(-50%) rotate(5deg);
+}
+.hero > .wrap{position:relative;z-index:1}
+@media(min-width:560px){.toothbg{width:166px;top:124px}}
 .brand{width:230px;max-width:70%;margin:0 auto 18px}
 .pill{
   display:inline-block;background:rgba(217,184,119,.14);border:1px solid rgba(217,184,119,.45);
@@ -577,6 +585,9 @@ footer .cross{margin-top:12px;font-size:12.5px;color:#7e786f}
 </div>
 
 <header class="hero">
+  <svg class="toothbg" viewBox="0 0 200 322" fill="none" aria-hidden="true" focusable="false">
+    <path d="M12 60C12 22 30 6 56 6c22 0 36 8 44 12c8-4 22-12 44-12c26 0 44 16 44 54c0 36-4 58-8 86c-4 24-8 50-14 90c-6 46-12 76-18 78c-6 2-10-14-14-52l-8-66c-2-20-14-28-26-28s-24 8-26 28l-8 66c-4 38-8 54-14 52c-6-2-12-32-18-78c-6-40-10-66-14-90C16 118 12 96 12 60Z" stroke="#d9b877" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
   <div class="wrap">
     <!-- LOGO: 1:1 aus landing-kfz-wechsel-ro ersetzen (Design-System) -->
     <div class="brand" id="brand">
@@ -1082,7 +1093,7 @@ ro:{
   askPh:"Scrie întrebarea ta…",
   askWa:"Preferi direct cu Tamas? Scrie-i lui Tamas pe WhatsApp",
   chatHelloPlan:"Te uiți la pachetul {plan}. Ce vrei să știi despre el?",
-  waIntTxt:"Bună Tamas! Mă interesează pachetul {plan} de la asigurarea dentară ERGO.",
+  waIntTxt:"Bună Tamas! Aș dori mai multe informații despre tariful {plan}.",
   sofTag:"Protecție imediată",
   sofSub:"Tarif ZEK · doar proteze dentare",
   sofH:"Medicul ți-a recomandat deja o lucrare?",
@@ -1310,7 +1321,7 @@ hu:{
   askPh:"Írd ide a kérdésed…",
   askWa:"Inkább közvetlenül Tamassal? Írj Tamasnak WhatsAppon",
   chatHelloPlan:"A {plan} csomagot nézed. Mit szeretnél tudni róla?",
-  waIntTxt:"Szia Tamas! Érdekel az ERGO fogászati biztosítás {plan} csomagja.",
+  waIntTxt:"Szia Tamas! Szeretnék további információt a {plan} tarifáról.",
   sofTag:"Azonnali védelem",
   sofSub:"ZEK tarifa · csak fogpótlás",
   sofH:"Az orvos már javasolt fogpótlást?",
@@ -1538,7 +1549,7 @@ de:{
   askPh:"Schreib deine Frage…",
   askWa:"Lieber direkt mit Tamas? Schreib Tamas auf WhatsApp",
   chatHelloPlan:"Du schaust dir {plan} an. Was möchtest du dazu wissen?",
-  waIntTxt:"Hallo Tamas! Ich habe Interesse am Paket {plan} der ERGO Zahnzusatzversicherung.",
+  waIntTxt:"Hallo Tamas! Ich möchte weitere Informationen zum Tarif {plan}.",
   sofTag:"Sofortschutz",
   sofSub:"Tarif ZEK · nur Zahnersatz",
   sofH:"Der Zahnarzt hat schon Zahnersatz angeraten?",
