@@ -66,6 +66,9 @@ export async function onRequest(context) {
     .on('meta[property="og:url"]', {
       element(el) { el.setAttribute("content", url.origin + "/" + lang); },
     })
+    .on('meta[property="og:image"]', {
+      element(el) { el.setAttribute("content", url.origin + "/og-" + lang + ".jpg"); },
+    })
     .on("head", {
       element(el) {
         // die Seite liest das beim Start aus, noch vor ?lang= und localStorage
