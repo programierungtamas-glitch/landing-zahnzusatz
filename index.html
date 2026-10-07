@@ -374,6 +374,11 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px;bord
 .success .big{font-size:40px;line-height:1}
 .success h3{margin:8px 0 4px;font-size:19px}
 .success p{color:var(--muted);margin:0 0 14px}
+.okfoto{
+  display:block;width:100%;max-width:300px;height:auto;margin:0 auto 16px;
+  border-radius:14px;border:1px solid var(--line);
+  box-shadow:0 10px 28px rgba(21,33,30,.14);
+}
 
 /* ---------- Antragsstrecke ---------- */
 .reassure{font-size:12.5px;color:var(--muted);text-align:center;margin:10px 0 0;line-height:1.5}
@@ -880,6 +885,7 @@ footer .cross{margin-top:12px;font-size:12.5px;color:#7e786f}
         <div class="big">✅</div>
         <h3 data-t="okH"></h3>
         <p data-t="okS"></p>
+        <img class="okfoto" id="okFoto" src="" alt="Tamas" loading="lazy" width="760" height="1142">
         <a class="btn btn--wa" id="okWa" href="#" target="_blank" rel="noopener" data-t="okWa"></a>
       </div>
     </div>
@@ -1225,7 +1231,7 @@ ro:{
   fSend:"Trimite cererea", fBack:"← Înapoi",
   errReq:"Te rog completează numele, telefonul și data nașterii și bifează acordul.",
   errSend:"Ceva nu a funcționat. Scrie-mi direct pe WhatsApp.",
-  okH:"Mulțumesc! Am primit cererea.", okS:"Te contactez în cel mai scurt timp cu oferta ta personală.",
+  okH:"Mulțumesc că ai completat cererea!", okS:"Îți verific datele și îți trimit contractul pentru semnătură. Dacă ceva nu este clar, te caut eu.",
   okWa:"Scrie-mi acum pe WhatsApp",
   stepsH:"Cum funcționează", stepsS:"Patru pași, fără drumuri la birou și fără telefon obligatoriu.",
   st1T:"Completezi cererea", st1S:"Online, direct pe telefon – 5 minute.",
@@ -1453,7 +1459,7 @@ hu:{
   fSend:"Kérés elküldése", fBack:"← Vissza",
   errReq:"Kérlek add meg a neved, a telefonszámod és a születési dátumot, és fogadd el a hozzájárulást.",
   errSend:"Valami nem sikerült. Írj inkább WhatsAppon.",
-  okH:"Köszönöm! Megkaptam a kérésed.", okS:"Hamarosan jelentkezem a személyes ajánlatoddal.",
+  okH:"Köszönöm, hogy kitöltötted!", okS:"Átnézem az adataidat, és elküldöm neked a szerződést aláírásra. Ha valami nem világos, én kereslek.",
   okWa:"Írj most WhatsAppon",
   stepsH:"Így működik", stepsS:"Négy lépés, irodába járás és kötelező telefon nélkül.",
   st1T:"Kitöltöd az igénylést", st1S:"Online, egyenesen a telefonodról – 5 perc.",
@@ -1681,7 +1687,7 @@ de:{
   fSend:"Anfrage senden", fBack:"← Zurück",
   errReq:"Bitte Name, Telefon und Geburtsdatum ausfüllen und die Einwilligung bestätigen.",
   errSend:"Da hat etwas nicht funktioniert. Schreib mir gern direkt auf WhatsApp.",
-  okH:"Danke! Anfrage ist angekommen.", okS:"Ich melde mich zeitnah mit deinem persönlichen Angebot.",
+  okH:"Danke, dass du den Antrag ausgefüllt hast!", okS:"Ich prüfe deine Daten und schicke dir den Vertrag zum Unterschreiben. Wenn etwas unklar ist, melde ich mich bei dir.",
   okWa:"Jetzt auf WhatsApp schreiben",
   stepsH:"So läuft es ab", stepsS:"Vier Schritte, ohne Bürotermin und ohne Pflichttelefonat.",
   st1T:"Du füllst den Antrag aus", st1S:"Online am Handy – 5 Minuten.",
@@ -1990,6 +1996,7 @@ function render(){
   });
   document.getElementById("waBtn").href = waLink();
   document.getElementById("okWa").href = waLinkFor(chosenPlan);
+  document.getElementById("okFoto").src = "tamas-" + lang + ".jpg";
   renderPeople(); renderPlans(); renderFaq(); renderCond(); renderQuote(); syncHidden();
   if (typeof chatReset === "function") chatReset();
 }
