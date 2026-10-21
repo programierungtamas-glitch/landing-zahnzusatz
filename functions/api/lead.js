@@ -115,6 +115,7 @@ export async function onRequestPost({ request, env }) {
       <table style="border-collapse:collapse;font-size:14px">${rows}</table>
       ${signature ? `<p style="margin-top:16px"><b>Unterschrift</b><br>
         <img src="${esc(signature)}" alt="Unterschrift" style="max-width:320px;border:1px solid #dfe6e3;border-radius:8px"></p>` : ""}
+      <p style="margin:16px 0 0;padding:10px 12px;background:#f7f3ec;border-radius:8px;font-size:13px">📇 <b>Kontakt speichern:</b> Im Anhang liegt <b>${esc(data.name)}.vcf</b> – anklicken, dann öffnet sich „Kontakte“ mit allen Daten. Nur noch „Hinzufügen“ klicken.</p>
       <p style="margin-top:16px">
         <a href="https://wa.me/${esc(
           String(data.phone).replace(/[^0-9]/g, "")
@@ -137,6 +138,11 @@ export async function onRequestPost({ request, env }) {
         content: signature.split(",")[1],
       }];
     }
+    payload.attachments = (payload.attachments || []).concat(vcardAttachment({
+      name: data.name, vorname: data.vorname, nachname: data.nachname, phone: data.phone, email: data.email,
+      street: data.strasse, zip: data.plz, city: data.ort, birthdate: data.birthdate,
+      quelle: data.partner || data.ref || '', contact: data.kanal, time: data.time, produkt: 'Zahnzusatz',
+    }));
     if (env.LEAD_CC) payload.cc = [env.LEAD_CC];
     if (data.email) payload.reply_to = data.email;
 
@@ -162,3 +168,52 @@ export async function onRequestPost({ request, env }) {
 }
 
 export const onRequestGet = () => new Response("ok", { status: 200 });
+
+
+// ---------- Kontaktkarte (vCard) für Mac/iPhone-Kontakte ----------
+function vEsc(s) {
+  return String(s ?? '').replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/([,;])/g, '\\$1');
+}
+function vPhone(p) {
+  let d = String(p || '').replace(/[^0-9+]/g, '');
+  if (d.startsWith('00')) d = '+' + d.slice(2);
+  else if (d.startsWith('0')) d = '+49' + d.slice(1);
+  else if (d && !d.startsWith('+')) d = '+' + d;
+  return d;
+}
+function vB64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  return btoa(bin);
+}
+function buildVCard(c) {
+  const parts = String(c.name || '').trim().split(/\s+/);
+  const vor = c.vorname || (parts.length > 1 ? parts.slice(0, -1).join(' ') : (parts[0] || ''));
+  const nach = c.nachname || (parts.length > 1 ? parts[parts.length - 1] : '');
+  const datum = new Date().toLocaleDateString('de-DE', { timeZone: 'Europe/Berlin' });
+  const notiz = [
+    'Lead ' + c.produkt + ' vom ' + datum,
+    c.quelle ? 'Quelle: ' + c.quelle : '',
+    c.contact ? 'Kontakt per: ' + c.contact : '',
+    c.time ? 'Beste Zeit: ' + c.time : '',
+    c.birthdate ? 'Geburtsdatum: ' + c.birthdate : '',
+  ].filter(Boolean).join('\n');
+  const l = ['BEGIN:VCARD', 'VERSION:3.0',
+    'N:' + vEsc(nach) + ';' + vEsc(vor) + ';;;',
+    'FN:' + vEsc(c.name),
+    'TEL;TYPE=CELL,VOICE:' + vPhone(c.phone)];
+  if (c.email) l.push('EMAIL;TYPE=INTERNET:' + vEsc(c.email));
+  if (c.street || c.zip || c.city) l.push('ADR;TYPE=HOME:;;' + vEsc(c.street) + ';' + vEsc(c.city) + ';;' + vEsc(c.zip) + ';Deutschland');
+  l.push('NOTE:' + vEsc(notiz));
+  l.push('CATEGORIES:' + vEsc(c.quelle ? 'Kunde ' + c.quelle : 'Kunde'));
+  l.push('END:VCARD');
+  return l.join('\r\n') + '\r\n';
+}
+function vcardAttachment(c) {
+  return {
+    filename: (String(c.name).replace(/[\\/:*?"<>|]+/g, ' ').trim() || 'Kontakt') + '.vcf',
+    content: vB64(buildVCard(c)),
+    content_type: 'text/vcard',
+  };
+}
