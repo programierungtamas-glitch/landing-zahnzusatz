@@ -202,6 +202,7 @@ function buildVCard(c) {
   const l = ['BEGIN:VCARD', 'VERSION:3.0',
     'N:' + vEsc(nach) + ';' + vEsc(vor) + ';;;',
     'FN:' + vEsc(c.name),
+    'ORG:' + vEsc(vOrg(c)),
     'TEL;TYPE=CELL,VOICE:' + vPhone(c.phone)];
   if (c.email) l.push('EMAIL;TYPE=INTERNET:' + vEsc(c.email));
   if (c.street || c.zip || c.city) l.push('ADR;TYPE=HOME:;;' + vEsc(c.street) + ';' + vEsc(c.city) + ';;' + vEsc(c.zip) + ';Deutschland');
@@ -216,4 +217,9 @@ function vcardAttachment(c) {
     content: vB64(buildVCard(c)),
     content_type: 'text/vcard',
   };
+}
+
+function vOrg(c) {
+  const q = String(c.quelle || '').split(' (')[0].trim();
+  return c.produkt + ' Kunde Tamas' + (q ? ' (über ' + q + ')' : '');
 }
